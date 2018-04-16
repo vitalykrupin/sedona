@@ -10,6 +10,8 @@
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
+
+            <button type="button" class="site-list__button button-close"></button>
           </li>
 
           <li class="site-list__item site-list__item--active">
@@ -26,21 +28,24 @@
         </ul>
       </nav>
 
-      <a class="page-header__logo logo">
-        <img src="http://placehold.it/150x100" alt="Седона" class="logo-sedona" width="102" height="83">
-      </a>
+      <div class="page-header__top-row top-row">
+        <a class="top-row__logo logo">
+          <img src="http://placehold.it/150x100" alt="Седона" class="logo__sedona" width="102" height="83">
+        </a>
 
-      <div class="page-promo">
-        <img src="http://placehold.it/150x100" class="page-promo__image page-promo__image--short" width="320" height="158" alt="Промо изображение">
+        <button type="button" class="top-row__button button-burger"></button>
       </div>
+
+      <h1 class="page-title">
+        <img src="http://placehold.it/150x100" class="page-title__image page-title__image--short" width="320" height="158" alt="Промо изображение">
+      </h1>
     </header>
 
     <main class="page-main">
       <section class="media">
-        <header class="media-header">
-            <h1 class="media__title">Фото и видео</h1>
-            <p class="media__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-          </header>
+        <header class="media-header content-header">
+          <h2 class="content-header__title">Фото и видео</h2>
+          <p class="content-header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
 
         <div class="media__section photo">

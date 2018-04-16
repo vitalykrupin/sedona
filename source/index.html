@@ -10,6 +10,8 @@
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
+
+            <button type="button" class="site-list__button button-close"></button>
           </li>
 
           <li class="site-list__item">
@@ -26,86 +28,84 @@
         </ul>
       </nav>
 
-      <a class="page-header__logo logo">
-        <img src="http://placehold.it/150x100" alt="Седона" class="logo-sedona" width="102" height="83">
-      </a>
+      <div class="page-header__top-row top-row">
+        <a class="top-row__logo logo">
+          <img src="http://placehold.it/150x100" alt="Седона" class="logo__sedona" width="102" height="83">
+        </a>
 
-      <div class="page-promo">
-        <img src="http://placehold.it/150x100" class="page-promo__image" width="320" height="389" alt="Промо изображение">
+        <button type="button" class="top-row__button button-burger"></button>
       </div>
+
+      <h1 class="page-title">
+        <img src="http://placehold.it/150x100" class="page-title__image" width="320" height="389" alt="Промо изображение">
+      </h1>
     </header>
 
     <main class="page-main">
       <article class="page-main__reasons reasons">
-        <header class="reasons__header">
-          <h1 class="reasons__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="reasons__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <header class="reasons__header content-header">
+          <h2 class="content-header__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="content-header__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </header>
 
-        <div class="reasons__section">
-          <div class="reason reason--blue">
+        <ul class="reasons__list main-list">
+          <li class="main-list__item reason reason--blue">
             <h2 class="reason__title">Настоящий городок</h2>
             <div class="reason__number">№1</div>
             <p class="reason__text">Седона не аттракцио для туристов, там течет своя жизнь</p>
-          </div>
 
-          <div class="reasons__picture">
-            <img src="http://placehold.it/150x100" width="320" height="260">
-          </div>
-        </div>
+            <div class="reason__picture">
+              <img src="http://placehold.it/150x100" width="320" height="260">
+            </div>
+          </li>
 
-        <div class="reasons__section">
-          <div class="reason reason__icon reason__icon--home">
-            <h2 class="reason__title">Жилье</h2>
-            <p class="reason__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </div>
+          <li class="main-list__item advantages">
+            <ul class="advantages-list">
+              <li class="advantages-list__item advantage advantage--home">
+                <h3 class="advantage__title">Жилье</h3>
+                <p class="advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
 
-          <div class="reason reason__icon reason__icon--gift">
-            <h2 class="reason__title">Сувениры</h2>
-            <p class="reason__text">Не только китайского, но и местного производства!</p>
-          </div>
+              <li class="advantages-list__item advantage advantage--gift">
+                <h3 class="advantage__title">Сувениры</h3>
+                <p class="advantage__text">Не только китайского, но и местного производства!</p>
+              </li>
 
-          <div class="reason reason__icon reason__icon--food">
-            <h2 class="reason__title">Еда</h2>
-            <p class="reason__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-          </div>
-        </div>
+              <li class="advantages-list__item advantage advantage--food">
+                <h3 class="advantage__title">Еда</h3>
+                <p class="advantage__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              </li>
+            </ul>
+          </li>
 
-        <div class="reasons__section">
-          <div class="reason reason--blue">
-            <h2 class="reason__title">Там есть мост дьявола</h2>
+          <li class="main-list__item reason reason--blue">
+            <h3 class="reason__title">Там есть мост дьявола</h3>
             <div class="reason__number">№2</div>
             <p class="reason__text">Да, по не можно пройти! Если вы осмелитесь, конечно</p>
-          </div>
 
-          <div class="reasons__picture">
-            <img src="http://placehold.it/150x100" width="320" height="260">
-          </div>
-        </div>
+            <div class="reason__picture">
+              <img src="http://placehold.it/150x100" width="320" height="260">
+            </div>
+          </li>
 
-        <div class="reasons__section">
-          <div class="reason reason--grey">
-            <h2 class="reason__title">Небольшая площадь</h2>
+          <li class="main-list__item reason reason--grey">
+            <h3 class="reason__title">Небольшая площадь</h3>
             <div class="reason__number">№3</div>
             <p class="reason__text">Все интересные места находятся очень близко</p>
-          </div>
-        </div>
+          </li>
 
-        <div class="reasons__section">
-          <div class="reason reason--grey">
-            <h2 class="reason__title">Красивая дорога</h2>
+          <li class="main-list__item reason reason--grey">
+            <h3 class="reason__title">Красивая дорога</h3>
             <div class="reason__number">№4</div>
             <p class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-        </div>
+          </li>
 
-        <div class="reasons__section">
-          <div class="reason reason--blue">
-            <h2 class="reason__title">Мало туристов</h2>
+          <li class="main-list__item reason reason--grey">
+            <h3 class="reason__title">Мало туристов</h3>
             <div class="reason__number">№5</div>
             <p class="reason__text">Большинство едет в гранд каньон и толпится там</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </article>
 
       <div class="page-main__search search">

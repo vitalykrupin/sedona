@@ -10,6 +10,8 @@
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
+
+            <button type="button" class="site-list__button button-close"></button>
           </li>
 
           <li class="site-list__item">
@@ -26,24 +28,28 @@
         </ul>
       </nav>
 
-      <a class="page-header__logo logo">
-        <img src="http://placehold.it/150x100" alt="Седона" class="logo__sedona" width="102" height="83">
-      </a>
+      <div class="page-header__top-row top-row">
+        <a class="top-row__logo logo">
+          <img src="http://placehold.it/150x100" alt="Седона" class="logo__sedona" width="102" height="83">
+        </a>
 
-      <div class="page-promo">
-        <img src="http://placehold.it/150x100" class="page-promo__image page-promo__image--short" width="320" height="158" alt="Промо изображение">
+        <button type="button" class="top-row__button button-burger"></button>
       </div>
+
+      <h1 class="page-title">
+        <img src="http://placehold.it/150x100" class="page-title__image page-title__image--short" width="320" height="158" alt="Промо изображение">
+      </h1>
     </header>
 
     <main class="page-main">
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <header class="feedback-form__header">
-          <h1 class="feedback-form__title">Оставьте свой отзыв</h1>
-          <p class="feedback-form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <header class="feedback-form__header content-header">
+          <h2 class="content-header__title">Оставьте свой отзыв</h2>
+          <p class="content-header__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
 
-        <div class="feedback-form__fieldset-name guest-name">
-          <h2 class="guest-name__title">Представьтесь:</h2>
+        <fieldset class="feedback-form__fieldset-name guest-name">
+          <legend class="guest-name__title">Представьтесь:</legend>
 
           <div class="guest-name__firstname firstname">
             <label for="firstname" class="firstname__label">Имя<sup>*</sup>:</label>
@@ -59,10 +65,10 @@
             <label for="lastname" class="lastname__label">Отчество:</label>
             <input type="text" class="lastname__input" name="lastname" id="lastname" placeholder="Александрович">
           </div>
-        </div>
+        </fieldset>
 
-        <div class="feedback-form__fieldset-contacts guest-contacts">
-          <h2 class="guest-contacts__title">Контактная информация:</h2>
+        <fieldset class="feedback-form__fieldset-contacts guest-contacts">
+          <legend class="guest-contacts__title">Контактная информация:</legend>
 
           <div class="guest-contacts__phone phone">
             <label for="phone" class="phone__label">Контактный телефон<sup>*</sup>:</label>
@@ -75,10 +81,10 @@
             <input type="email" class="email__input" name="email" id="email" placeholder="Введите e-mail">
             <img class="email__image" src="http://placehold.it/150x100" alt="Изображение конверта" width="58" height="58">
           </div>
-        </div>
+        </fieldset>
 
-        <div class="feedback-form__fieldset-impressions guest-impressions">
-          <h2 class="guest-impressions__title">Ваше общее впечатление:</h2>
+        <fieldset class="feedback-form__fieldset-impressions guest-impressions">
+          <legend class="guest-impressions__title">Ваше общее впечатление:</legend>
 
           <div class="guest-impressions__impression guest-impressions__impression--active impression-positive">
             <label for="impression-positive" class="impression-positive__label">Скорее положительное</label>
@@ -94,10 +100,10 @@
             <label for="impression-other" class="impression-other__label">Затрудняюсь ответить</label>
             <input type="radio" class="impression-other__input" name="impression" value="other" id="impression-other">
           </div>
-        </div>
+        </fieldset>
 
-        <div class="feedback-form__visited-places guest-visited-places">
-          <h2 class="guest-visited-places__title">Посещенные достопримечательности:</h2>
+        <fieldset class="feedback-form__visited-places guest-visited-places">
+          <legend class="guest-visited-places__title">Посещенные достопримечательности:</legend>
 
           <div class="guest-visited-places__visited-place guest-visited-places__visited-place--active visited-place">
             <label for="devil-bridge" class="visited-place__label">Мост Дьявола</label>
@@ -118,19 +124,19 @@
             <label for="red-rocks" class="visited-place__label">Красные скалы</label>
             <input type="checkbox" class="visited-place__input" name="visited-place" value="red-rocks" id="red-rocks">
           </div>
-        </div>
+        </fieldset>
 
-        <div class="feedback-form__emotions guest-emotions">
-          <h2 class="guest-emotions__title">Опишите свои эмоции:</h2>
+        <fieldset class="feedback-form__emotions guest-emotions">
+          <legend class="guest-emotions__title">Опишите свои эмоции:</legend>
 
-            <div class="guest-emotions emotions">
-              <textarea class="emotions__text" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
-            </div>
+          <div class="guest-emotions emotions">
+            <textarea class="emotions__text" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
 
-        <div class="feedback-form__control guest-submit">
-          <button type="submit" class="guest-submit__button button">Отправить отзыв</button>
-        </div>
+          <div class="feedback-form__control guest-submit">
+            <button type="submit" class="guest-submit__button button">Отправить отзыв</button>
+          </div>
+        </fieldset>
       </form>
 
       <div class="failure-popup">
