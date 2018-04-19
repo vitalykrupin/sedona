@@ -1,4 +1,8 @@
-.video__title {
+.success-popup {
+  height: 324px;
+}
+
+.success-popup__title {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -8,7 +12,7 @@
   color: $black;
 }
 
-.video__text {
+.success-popup__text {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;

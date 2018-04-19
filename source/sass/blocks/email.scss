@@ -1,0 +1,59 @@
+.email__label {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  color: #333;
+}
+
+.email__input {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $black;
+  background-color: $grey-input;
+
+
+  height: 58px;
+  border: none;
+
+  &::-webkit-input-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: $black;
+  }
+
+  &:-moz-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: $black;
+  }
+
+  &::-moz-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: $black;
+  }
+
+  &:-ms-input-placeholder{
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: $black;
+  }
+}

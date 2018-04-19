@@ -1,0 +1,15 @@
+.impressions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.impressions-list__item {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $black;
+  border: none;
+}

@@ -1,0 +1,15 @@
+.guest-name {
+  min-height: 306px;
+  
+  border: none;
+}
+
+.guest-name__title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  color: $black;
+}

@@ -1,4 +1,8 @@
-.video__title {
+.failure-popup {
+  height: 280px;;
+}
+
+.failure-popup__title {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -8,7 +12,7 @@
   color: $black;
 }
 
-.video__text {
+.failure-popup__text {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
