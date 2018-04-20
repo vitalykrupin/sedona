@@ -1,5 +1,5 @@
 .guest-emotions {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: $ptsans;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -11,7 +11,7 @@
 }
 
 .guest-emotions__title {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: $ptsans;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -29,7 +29,7 @@
   border: none;
 
   &::-webkit-input-placeholder {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: $ptsans;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -38,7 +38,7 @@
   }
 
   &:-moz-placeholder {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: $ptsans;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -47,7 +47,7 @@
   }
 
   &::-moz-placeholder {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: $ptsans;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -56,7 +56,7 @@
   }
 
   &:-ms-input-placeholder {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: $ptsans;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;

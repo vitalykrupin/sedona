@@ -1,5 +1,5 @@
 .social__list {
-  list-style: none;
-
+  @include list-reset();
+  
   display: flex;
 }

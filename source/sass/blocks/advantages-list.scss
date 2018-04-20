@@ -1,5 +1,25 @@
 .advantages-list {
-  list-style: none;
-  padding: 0;
+  @include list-reset();
+}
+
+.advantages-list__title {
+  font-family: $ptsans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
   margin: 0;
+
+  color: $black;
+}
+
+.advantages-list__text {
+  font-family: $ptsans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  color: $grey-text;
 }

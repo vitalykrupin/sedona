@@ -1,0 +1,83 @@
+.feedback-form__label {
+  &--text {
+    font-family: $ptsans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    color: $grey-text;
+  }
+
+  &--radio {
+    font-family: $ptsans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: $black;
+    border: none;
+  }
+
+  &--checkbox {
+    font-family: $ptsans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: $black;
+    border: none;
+  }
+}
+
+.feedback-form__input {
+  &--text {
+    font-family: $ptsans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: $black;
+    background-color: $grey-input;
+
+
+    height: 58px;
+    border: none;
+
+    &::-webkit-input-placeholder {
+      font-family: $ptsans;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+
+      color: $black;
+    }
+
+    &:-moz-placeholder {
+      font-family: $ptsans;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+
+      color: $black;
+    }
+
+    &::-moz-placeholder {
+      font-family: $ptsans;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+
+      color: $black;
+    }
+
+    &:-ms-input-placeholder{
+      font-family: $ptsans;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+
+      color: $black;
+    }
+  }
+}

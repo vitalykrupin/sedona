@@ -13,7 +13,7 @@
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
 
-            <button type="button" class="site-list__button button-close"></button>
+            <button type="button" class="site-list__button menu-button menu-button--close"></button>
           </li>
 
           <li class="site-list__item">
@@ -35,7 +35,7 @@
           <img src="http://placehold.it/150x100" alt="Седона" class="logo__sedona" width="102" height="83">
         </a>
 
-        <button type="button" class="top-row__button button-burger"></button>
+        <button type="button" class="top-row__button menu-button menu-button--burger"></button>
       </div>
 
       <h1 class="page-title page-title--short">
@@ -54,19 +54,19 @@
           <legend class="guest-name__title">Представьтесь:</legend>
 
           <ul class="guest-name__list name-list">
-            <li class="name-list__item firstname">
-              <label for="firstname" class="firstname__label">Имя<sup>*</sup>:</label>
-              <input type="text" class="firstname__input" name="firstname" id="firstname" placeholder="Петр">
+            <li class="name-list__item">
+              <label for="firstname" class="feedback-form__label feedback-form__label--text">Имя<sup>*</sup>:</label>
+              <input type="text" class="feedback-form__input feedback-form__input--text" name="firstname" id="firstname" placeholder="Петр">
             </li>
 
-            <li class="name-list__item surname">
-              <label for="surname" class="surname__label">Фамилия<sup>*</sup>:</label>
-              <input type="text" class="surname__input" name="surname" id="surname" placeholder="Иванов">
+            <li class="name-list__item">
+              <label for="surname" class="feedback-form__label feedback-form__label--text">Фамилия<sup>*</sup>:</label>
+              <input type="text" class="feedback-form__input feedback-form__input--text" name="surname" id="surname" placeholder="Иванов">
             </li>
 
-            <li class="name-list__item lastname">
-              <label for="lastname" class="lastname__label">Отчество:</label>
-              <input type="text" class="lastname__input" name="lastname" id="lastname" placeholder="Александрович">
+            <li class="name-list__item">
+              <label for="lastname" class="feedback-form__label feedback-form__label--text">Отчество:</label>
+              <input type="text" class="feedback-form__input feedback-form__input--text" name="lastname" id="lastname" placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
@@ -75,16 +75,14 @@
           <legend class="guest-contacts__title">Контактная информация:</legend>
 
           <ul class="guest-contacts__list contacts-list">
-            <li class="contacts-list__item phone">
-              <label for="phone" class="phone__label">Контактный телефон<sup>*</sup>:</label>
-              <input type="tel" class="phone__input" name="tel" id="phone" placeholder="Введите телефон">
-              <img class="phone__image" src="http://placehold.it/150x100" alt="Изображение трубки" width="58" height="58">
+            <li class="contacts-list__item">
+              <label for="phone" class="feedback-form__label feedback-form__label--text">Контактный телефон<sup>*</sup>:</label>
+              <input type="tel" class="feedback-form__input feedback-form__input--text" name="tel" id="phone" placeholder="Введите телефон">
             </li>
 
-            <li class="contacts-list__item email">
-              <label for="email" class="email__label">Электронная почта<sup>*</sup>:</label>
-              <input type="email" class="email__input" name="email" id="email" placeholder="Введите e-mail">
-              <img class="email__image" src="http://placehold.it/150x100" alt="Изображение конверта" width="58" height="58">
+            <li class="contacts-list__item">
+              <label for="email" class="feedback-form__label feedback-form__label--text">Электронная почта<sup>*</sup>:</label>
+              <input type="email" class="feedback-form__input feedback-form__input--text" name="email" id="email" placeholder="Введите e-mail">
             </li>
           </ul>
         </fieldset>
@@ -93,19 +91,19 @@
           <legend class="guest-impressions__title">Ваше общее впечатление:</legend>
 
           <ul class="guest-impressions__list impressions-list">
-            <li class="impressions-list__item impressions-list__item--active impression-positive">
-              <input type="radio" class="impression-positive__input" name="impression" value="positive" id="impression-positive" checked>
-              <label for="impression-positive" class="impression-positive__label">Скорее положительное</label>
+            <li class="impressions-list__item impressions-list__item--active">
+              <input type="radio" class="feedback-form__input--radio" name="impression" value="positive" id="impression-positive" checked>
+              <label for="impression-positive" class="feedback-form__label--radio">Скорее положительное</label>
             </li>
 
-            <li class="impressions-list__item impression-negative">
-              <input type="radio" class="impression-negative__input" name="impression" value="negative" id="impression-negative">
-              <label for="impression-negative" class="impression-negative__label">Скорее отрицательное</label>
+            <li class="impressions-list__item">
+              <input type="radio" class="feedback-form__input--radio" name="impression" value="negative" id="impression-negative">
+              <label for="impression-negative" class="feedback-form__label--radio">Скорее отрицательное</label>
             </li>
 
-            <li class="impressions-list__item impression-other">
-              <input type="radio" class="impression-other__input" name="impression" value="other" id="impression-other">
-              <label for="impression-other" class="impression-other__label">Затрудняюсь ответить</label>
+            <li class="impressions-list__item">
+              <input type="radio" class="feedback-form__input--radio" name="impression" value="other" id="impression-other">
+              <label for="impression-other" class="feedback-form__label--radio">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
@@ -114,24 +112,24 @@
           <legend class="guest-visited-places__title">Посещенные достопримечательности:</legend>
 
           <ul class="guest-visited-places__list visited-places-list">
-            <li class="visited-places-list__item visited-places-list__item--active visited-place">
-              <input type="checkbox" class="visited-place__input" name="visited-place" value="devil-bridge" id="devil-bridge" checked>
-              <label for="devil-bridge" class="visited-place__label">Мост Дьявола</label>
+            <li class="visited-places-list__item visited-places-list__item--active">
+              <input type="checkbox" class="feedback-form__input--checkbox" name="visited-place" value="devil-bridge" id="devil-bridge" checked>
+              <label for="devil-bridge" class="feedback-form__label--checkbox">Мост Дьявола</label>
             </li>
 
             <li class="visited-places-list__item visited-places-list__item--active visited-place">
-              <input type="checkbox" class="visited-place__input" name="visited-place" value="bell-mountain" id="bell-mountain" checked>
-              <label for="bell-mountain" class="visited-place__label">Гора-Колокол</label>
+              <input type="checkbox" class="feedback-form__input--checkbox" name="visited-place" value="bell-mountain" id="bell-mountain" checked>
+              <label for="bell-mountain" class="feedback-form__label--checkbox">Гора-Колокол</label>
             </li>
 
             <li class="visited-places-list__item visited-places-list__item--active visited-place">
-              <input type="checkbox" class="visited-place__input" name="visited-place" value="slide-park" id="slide-park" checked>
-              <label for="slide-park" class="visited-place__label">Слайд-парк</label>
+              <input type="checkbox" class="feedback-form__input--checkbox" name="visited-place" value="slide-park" id="slide-park" checked>
+              <label for="slide-park" class="feedback-form__label--checkbox">Слайд-парк</label>
             </li>
 
             <li class="visited-places-list__item visited-place">
-              <input type="checkbox" class="visited-place__input" name="visited-place" value="red-rocks" id="red-rocks">
-              <label for="red-rocks" class="visited-place__label">Красные скалы</label>
+              <input type="checkbox" class="feedback-form__input--checkbox" name="visited-place" value="red-rocks" id="red-rocks">
+              <label for="red-rocks" class="feedback-form__label--checkbox">Красные скалы</label>
             </li>
           </ul>
         </fieldset>

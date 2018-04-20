@@ -1,4 +1,4 @@
-.button-close {
+.menu-button--close {
   position: absolute;
   top: 0;
   right: 0;
@@ -22,7 +22,7 @@
     width: 19px;
     height: 3px;
 
-    background-color: #fff;
+    background-color: $white;
 
     transform: rotate(45deg);
   }
@@ -37,8 +37,14 @@
     width: 19px;
     height: 3px;
 
-    background-color: #fff;
+    background-color: $white;
 
     transform: rotate(-45deg);
   }
+}
+
+.menu-button--burger {
+  position: absolute;
+  right: 0;
+  top: 50%;
 }

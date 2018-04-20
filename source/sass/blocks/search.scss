@@ -3,7 +3,7 @@
 }
 
 .search__title {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: $ptsans;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -15,11 +15,11 @@
 }
 
 .search__text {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: $ptsans;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
 
-  color: $black;
+  color: $grey-text;
 }
