@@ -1,0 +1,23 @@
+.failure-popup {
+  height: 280px;
+}
+
+.failure-popup__title {
+  font-family: $ptsans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.failure-popup__text {
+  font-family: $ptsans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: $grey-text;
+}

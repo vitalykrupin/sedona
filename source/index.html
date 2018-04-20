@@ -3,27 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="body">
     <header class="page-header">
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a class="site-list__link">Главная</a>
 
-            <button type="button" class="site-list__button button-close"></button>
+            <button type="button" class="site-list__button menu-button menu-button--close"></button>
           </li>
 
           <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
 
           <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
 
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -33,11 +35,11 @@
           <img src="http://placehold.it/150x100" alt="Седона" class="logo__sedona" width="102" height="83">
         </a>
 
-        <button type="button" class="top-row__button button-burger"></button>
+        <button type="button" class="top-row__button menu-button menu-button--burger"></button>
       </div>
 
       <h1 class="page-title">
-        <img src="http://placehold.it/150x100" class="page-title__image" width="320" height="389" alt="Промо изображение">
+        <img src="../img/bg-back-mobile@1x.jpg" class="page-title__image" width="320" height="389" alt="Промо изображение">
       </h1>
     </header>
 
@@ -61,19 +63,19 @@
 
           <li class="main-list__item advantages">
             <ul class="advantages-list">
-              <li class="advantages-list__item advantage advantage--home">
-                <h3 class="advantage__title">Жилье</h3>
-                <p class="advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <li class="advantages-list__item advantages-list__item--home">
+                <h3 class="advantages-list__title">Жилье</h3>
+                <p class="advantages-list__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
 
-              <li class="advantages-list__item advantage advantage--gift">
-                <h3 class="advantage__title">Сувениры</h3>
-                <p class="advantage__text">Не только китайского, но и местного производства!</p>
+              <li class="advantages-list__item advantages-list__item--gift">
+                <h3 class="advantages-list__title">Сувениры</h3>
+                <p class="advantages-list__text">Не только китайского, но и местного производства!</p>
               </li>
 
-              <li class="advantages-list__item advantage advantage--food">
-                <h3 class="advantage__title">Еда</h3>
-                <p class="advantage__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              <li class="advantages-list__item advantages-list__item--food">
+                <h3 class="advantages-list__title">Еда</h3>
+                <p class="advantages-list__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
@@ -108,13 +110,13 @@
         </ul>
       </section>
 
-      <div class="page-main__search search">
-        <h1 class="search__title">Заинтересовались?</h1>
+      <section class="page-main__search search">
+        <h3 class="search__title">Заинтересовались?</h3>
         <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button type="button" class="search__button button">Найти гостиницу</button>
-      </div>
+      </section>
 
-      <div class="page-main__map map"></div>
+      <section class="page-main__map map"></section>
     </main>
 
     <footer class="page-footer">

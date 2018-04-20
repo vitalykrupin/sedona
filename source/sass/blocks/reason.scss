@@ -1,0 +1,50 @@
+.reason {
+  &--blue {
+    min-height: 469px;
+
+    background-color: $light-blue;
+    color: $white;
+  }
+
+  &--grey {
+    min-height: 167px;
+
+    background-color: $grey;
+    color: $black;
+  }
+}
+
+.reason__title {
+  font-family: $ptsans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.reason__number {
+  font-family: $ptsans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  color: $grey-text;
+}
+
+.reason--blue > .reason__number,
+.reason--blue > .reason__text {
+  color: $white;
+}
+
+.reason__text {
+  font-family: $ptsans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  color: $grey-text;
+}
