@@ -9,6 +9,13 @@
   border: none;
 }
 
+@media (min-width: $tablet-width) {
+  .guest-emotions {
+    order: 5;
+    width: 768px;
+  }
+}
+
 .guest-emotions__title {
   font-weight: 700;
   font-size: 18px;

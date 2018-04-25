@@ -2,6 +2,18 @@
   height: 267px;
 }
 
+@media (min-width: $tablet-width) {
+  .content-header {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content-header {
+    width: 1200px;
+  }
+}
+
 .content-header__title {
   font-weight: 700;
   font-size: 18px;

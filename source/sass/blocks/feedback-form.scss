@@ -1,3 +1,13 @@
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback-form legend {
+  margin: 0;
+  padding: 0;
+}
+
 .feedback-form__label {
   &--text {
     font-weight: 400;

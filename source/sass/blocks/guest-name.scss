@@ -3,6 +3,13 @@
   border: none;
 }
 
+@media (min-width: $tablet-width) {
+  .guest-name {
+    width: 384px;
+    order: 2;
+  }
+}
+
 .guest-name__title {
   font-weight: 700;
   font-size: 18px;
