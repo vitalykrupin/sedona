@@ -5,3 +5,10 @@
     padding-right: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1200px;
+    padding: 0;
+  }
+}

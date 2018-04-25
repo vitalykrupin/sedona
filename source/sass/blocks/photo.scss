@@ -1,5 +1,4 @@
 .photo {
-  width: 320px;
   height: 415px;
   padding: 22px 20px;
 }
@@ -13,6 +12,7 @@
   .photo {
     width: 324px;
     padding: 0;
+    height: 347px;
   }
 
   .photo--first {
@@ -24,7 +24,28 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+
+    background-color: $input-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo {
+    width: 400px;
+    height: 268px;
+    padding: 0;
+  }
+
+  .photo--first {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photo__info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
     background-color: $input-color;
   }
 }

@@ -11,10 +11,18 @@
   }
 }
 
+.page-footer > .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer > .container {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: space-between;
   }
 }
