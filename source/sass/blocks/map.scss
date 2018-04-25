@@ -3,3 +3,15 @@
   height: 350px;
   background-image: url("../img/bg-map-mobile@1x.jpg");
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: 1200px;
+  }
+}

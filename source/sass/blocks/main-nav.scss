@@ -1,0 +1,23 @@
+.main-nav {
+  position: relative;
+
+  min-height: 56px;
+}
+
+.main-nav__wrapper {
+  position: absolute;
+
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 1200px;
+  }
+}

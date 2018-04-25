@@ -1,5 +1,29 @@
+.social {
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 324px;
+  }
+}
+
 .social__list {
   @include list-reset();
 
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+
+  background-color: $primary-color;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 6px;
 }

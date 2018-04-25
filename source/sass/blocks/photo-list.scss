@@ -1,3 +1,13 @@
-.photo-list {
+.photo-list{
   @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

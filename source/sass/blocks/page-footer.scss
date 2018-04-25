@@ -4,3 +4,17 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    height: 160px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}

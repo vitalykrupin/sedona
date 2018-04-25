@@ -7,39 +7,36 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
-    <header class="page-header">
+    <header class="page-header page-header--sub">
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+        <button type="button" class="site-list__toggle menu-button menu-button--close"></button>
+        <div class="main-nav__wrapper visually-hidde">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Главная</a>
+            </li>
 
-            <button type="button" class="site-list__button menu-button menu-button--close"></button>
-          </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фото и видео</a>
+            </li>
 
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фото и видео</a>
-          </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Форма отзыва</a>
+            </li>
 
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Форма отзыва</a>
-          </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
 
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
+        <a class="page-header__logo logo">
+          <img src="../img/logo-sedona-mobile.svg" alt="Седона" class="logo__sedona" width="102" height="83">
+        </a>
       </nav>
 
-      <div class="page-header__top-row top-row">
-        <a class="top-row__logo logo">
-          <img src="http://placehold.it/150x100" alt="Седона" class="logo__sedona" width="102" height="83">
-        </a>
-
-        <button type="button" class="top-row__button menu-button menu-button--burger"></button>
-      </div>
-
       <h1 class="page-title page-title--short">
-        <img src="../img/bg-back-mobile@1x.jpg" class="page-title__image" width="320" height="158" alt="Промо изображение">
+        <img src="" class="page-title__image" alt="Промо изображение">
       </h1>
     </header>
 

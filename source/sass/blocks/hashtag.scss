@@ -1,9 +1,16 @@
 .hashtag {
-  font-family: $ptsans;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
 
   color: $black;
+
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .hashtag {
+    width: 162px;
+  }
 }

@@ -1,5 +1,4 @@
 .video__title {
-  font-family: $ptsans;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -9,11 +8,10 @@
 }
 
 .video__text {
-  font-family: $ptsans;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
 
-  color: $grey-text;
+  color: $light-text;
 }

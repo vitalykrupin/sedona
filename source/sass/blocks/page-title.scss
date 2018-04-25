@@ -1,8 +1,33 @@
 .page-title {
+  margin: 0;
+
   width: 320px;
   height: 389px;
 
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center;
+
   &--short {
     height: 159px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    width: 768px;
+    min-height: 518px;
+  }
+  &--short {
+    height: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page.title {
+    width: 1200px;
+  }
+  &--short {
+    height: 301px;
   }
 }

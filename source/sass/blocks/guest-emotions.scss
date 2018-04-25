@@ -1,5 +1,4 @@
 .guest-emotions {
-  font-family: $ptsans;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -11,7 +10,6 @@
 }
 
 .guest-emotions__title {
-  font-family: $ptsans;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -25,11 +23,10 @@
   height: 161px;
   resize: none;
 
-  background-color: $grey-input;
+  background-color: $input-color;
   border: none;
 
   &::-webkit-input-placeholder {
-    font-family: $ptsans;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -38,7 +35,6 @@
   }
 
   &:-moz-placeholder {
-    font-family: $ptsans;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -47,7 +43,6 @@
   }
 
   &::-moz-placeholder {
-    font-family: $ptsans;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -56,7 +51,6 @@
   }
 
   &:-ms-input-placeholder {
-    font-family: $ptsans;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
