@@ -3,7 +3,10 @@
   flex-wrap: wrap;
 }
 
-
+.feedback-form fieldset {
+  padding: 0;
+  margin: 0;
+}
 
 .feedback-form legend {
   margin: 0;
@@ -84,4 +87,8 @@
       color: $black;
     }
   }
+}
+
+.feedback-form__control {
+  margin-right: auto;
 }

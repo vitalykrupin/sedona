@@ -7,12 +7,15 @@
 
   height: 331px;
   border: none;
+
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {
   .guest-emotions {
     order: 5;
-    width: 768px;
+    width: 100%;
   }
 }
 
@@ -63,5 +66,11 @@
     line-height: 26px;
 
     color: $black;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .guest-emotions__text {
+    width: 100%;
   }
 }
