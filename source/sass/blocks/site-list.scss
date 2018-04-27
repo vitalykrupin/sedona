@@ -8,11 +8,14 @@
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .site-list__item {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 55px;
 
@@ -49,7 +52,7 @@
 
   color: $white;
 
-  margin: auto;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {

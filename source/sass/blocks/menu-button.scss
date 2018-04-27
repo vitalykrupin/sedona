@@ -1,45 +1,45 @@
-.menu-button--close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
+// .menu-button--close {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   z-index: 1;
 
-  width: 23px;
-  height: 23px;
-  font-size: 0;
+//   width: 23px;
+//   height: 23px;
+//   font-size: 0;
 
-  background-color: transparent;
-  border: 0;
+//   background-color: transparent;
+//   border: 0;
 
-  cursor: pointer;
+//   cursor: pointer;
 
-  &::before {
-    content: "";
+//   &::before {
+//     content: "";
 
-    position: absolute;
-    top: 10px;
-    left: 2px;
+//     position: absolute;
+//     top: 10px;
+//     left: 2px;
 
-    width: 19px;
-    height: 3px;
+//     width: 19px;
+//     height: 3px;
 
-    background-color: $white;
+//     background-color: $white;
 
-    transform: rotate(45deg);
-  }
+//     transform: rotate(45deg);
+//   }
 
-  &::after {
-    content: "";
+//   &::after {
+//     content: "";
 
-    position: absolute;
-    top: 10px;
-    left: 2px;
+//     position: absolute;
+//     top: 10px;
+//     left: 2px;
 
-    width: 19px;
-    height: 3px;
+//     width: 19px;
+//     height: 3px;
 
-    background-color: $white;
+//     background-color: $white;
 
-    transform: rotate(-45deg);
-  }
-}
+//     transform: rotate(-45deg);
+//   }
+// }
