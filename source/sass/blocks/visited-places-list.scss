@@ -1,3 +1,26 @@
 .visited-places-list {
   @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .visited-places-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .visited-places-list__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .visited-places-list__item {
+    flex-direction: row;
+    width: 25%;
+  }
 }

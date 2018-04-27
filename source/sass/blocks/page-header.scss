@@ -1,0 +1,30 @@
+.page-header {
+  position: relative;
+
+  min-height: 445px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: $white;
+
+  &--sub {
+    min-height: 215px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    height: 574px;
+  }
+
+  &--sub {
+    min-height: 346px;
+  }
+}
+
+@media (min-height: $desktop-width) {
+  .page-header--sub {
+    min-height: 357px;
+  }
+}

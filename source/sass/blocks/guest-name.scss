@@ -3,8 +3,14 @@
   border: none;
 }
 
+@media (min-width: $tablet-width) {
+  .guest-name {
+    width: 50%;
+    order: 2;
+  }
+}
+
 .guest-name__title {
-  font-family: $ptsans;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

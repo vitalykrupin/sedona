@@ -1,12 +1,15 @@
 $white: #ffffff;
 $black: #000000;
 
-$blue: #669ec0;
-$light-blue: #81b3d2;
-$dark-blue: #5496bd;
+$hover-color: #669ec0;
+$primary-color: #81b3d2;
+$down-color: #5496bd;
 
 $grey: #eeeeee;
-$grey-input: #f2f2f2;
-$grey-text: #333333;
+$input-color: #f2f2f2;
+$light-text: #333333;
 
-$ptsans: "PT Sans", "Arial", sans-serif;
+$main-font: "PT Sans", "Arial", sans-serif;
+
+$tablet-width: 768px;
+$desktop-width: 1200px;

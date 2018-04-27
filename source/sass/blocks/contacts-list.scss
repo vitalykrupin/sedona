@@ -1,3 +1,30 @@
 .contacts-list {
   @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-list {
+    flex-direction: row;
+  }
+}
+
+.contacts-list__item {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-list__item {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-list__item {
+    flex-direction: row;
+    width: 50%;
+  }
 }

@@ -3,8 +3,14 @@
   border: none;
 }
 
+@media (min-width: $tablet-width) {
+  .guest-impressions {
+    order: 1;
+    width: 50%;
+  }
+}
+
 .guest-impressions__title {
-  font-family: $ptsans;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

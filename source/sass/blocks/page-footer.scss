@@ -4,3 +4,25 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    height: 160px;
+  }
+}
+
+.page-footer > .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer > .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

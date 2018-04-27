@@ -3,8 +3,14 @@
   border: none;
 }
 
+@media (min-width: $tablet-width) {
+  .guest-visited-places {
+    order: 4;
+    width: 100%;
+  }
+}
+
 .guest-visited-places__title {
-  font-family: $ptsans;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

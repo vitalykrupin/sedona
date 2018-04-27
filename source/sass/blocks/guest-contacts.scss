@@ -3,8 +3,14 @@
   border: none;
 }
 
+@media (min-width: $tablet-width) {
+  .guest-contacts {
+    order: 3;
+    width: 100%;
+  }
+}
+
 .guest-contacts__title {
-  font-family: $ptsans;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

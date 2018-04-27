@@ -2,14 +2,13 @@
 @import "globals/variables.scss";
 @import "globals/mixins.scss";
 @import "blocks/body.scss";
-// @import "blocks/page-header.scss";
-// @import "blocks/main-nav.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 @import "blocks/menu-button.scss";
-@import "blocks/top-row.scss";
 @import "blocks/logo.scss";
 @import "blocks/page-title.scss";
-// @import "blocks/page-main.scss";
+@import "blocks/page-main.scss";
 // @import "blocks/reasons.scss";
 @import "blocks/content-header.scss";
 @import "blocks/main-list.scss";
@@ -42,3 +41,6 @@
 @import "blocks/guest-emotions.scss";
 @import "blocks/failure-popup.scss";
 @import "blocks/success-popup.scss";
+@import "blocks/sub-list.scss";
+@import "blocks/container.scss";
+@import "blocks/top-row.scss";

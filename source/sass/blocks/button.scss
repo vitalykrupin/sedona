@@ -1,15 +1,20 @@
 .button {
-  font-family: $ptsans;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
 
-  background-color: $light-blue;
+  background-color: $primary-color;
   color: $white;
 
   width: 280px;
   height: 58px;
 
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 458px;
+  }
 }

@@ -1,5 +1,15 @@
 .top-row {
-  position: relative;
-  width: 320px;
   min-height: 56px;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .top-row {
+    position: absolute;
+  }
 }
