@@ -1,4 +1,4 @@
-.photo-list{
+.photo-list {
   @include list-reset();
 
   display: flex;
@@ -30,7 +30,7 @@
   }
 
   .photo-list__item:first-child {
-    width: 100%
+    width: 100%;
   }
 }
 
