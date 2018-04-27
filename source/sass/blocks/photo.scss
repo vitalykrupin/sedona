@@ -1,6 +1,5 @@
 .photo {
   height: 415px;
-  padding: 22px 20px;
 }
 
 .photo__info {
@@ -10,13 +9,13 @@
 
 @media (min-width: $tablet-width) {
   .photo {
-    width: 324px;
+    width: 50%;
     padding: 0;
     height: 347px;
   }
 
-  .photo--first {
-    width: 648px;
+  .photo:first-child {
+    width: 100%;
     height: 480px;
   }
 
@@ -31,13 +30,13 @@
 
 @media (min-width: $desktop-width) {
   .photo {
-    width: 400px;
+    width: 33%;
     height: 268px;
     padding: 0;
   }
 
-  .photo--first {
-    width: 1200px;
+  .photo:first-child {
+    width: 100%;
     height: 400px;
   }
 

@@ -8,7 +8,6 @@
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 
@@ -25,6 +24,11 @@
 @media (min-width: $tablet-width) {
   .site-list__item {
     background-color: transparent;
+    width: 20%;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-right: auto;
   }
 }
 

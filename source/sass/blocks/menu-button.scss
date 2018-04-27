@@ -1,45 +1,11 @@
-// .menu-button--close {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   z-index: 1;
+// .menu-button--burger {
+//   width: 10px;
+//   height: 10px;
+//   background-color: $black;
+// }
 
-//   width: 23px;
-//   height: 23px;
-//   font-size: 0;
-
-//   background-color: transparent;
-//   border: 0;
-
-//   cursor: pointer;
-
-//   &::before {
-//     content: "";
-
-//     position: absolute;
-//     top: 10px;
-//     left: 2px;
-
-//     width: 19px;
-//     height: 3px;
-
-//     background-color: $white;
-
-//     transform: rotate(45deg);
-//   }
-
-//   &::after {
-//     content: "";
-
-//     position: absolute;
-//     top: 10px;
-//     left: 2px;
-
-//     width: 19px;
-//     height: 3px;
-
-//     background-color: $white;
-
-//     transform: rotate(-45deg);
+// @media (min-width: $tablet-width) {
+//   .menu-button--burger {
+//     display: none;
 //   }
 // }

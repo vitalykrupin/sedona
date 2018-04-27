@@ -2,18 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <header class="page-header page-header--sub">
-      <nav class="main-nav">
-        <button type="button" class="site-list__toggle menu-button menu-button--close"></button>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button type="button" class="main-nav__toggle menu-button menu-button--close"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
 
             <li class="site-list__item">
@@ -21,7 +22,7 @@
             </li>
 
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Форма отзыва</a>
+              <a class="site-list__link">Форма отзыва</a>
             </li>
 
             <li class="site-list__item">
@@ -31,9 +32,11 @@
         </div>
       </nav>
 
-      <a class="page-header__logo logo">
-        <img src="../img/logo-sedona-mobile.svg" alt="Седона" class="logo__sedona" width="102" height="83">
-      </a>
+      <div class="top-row">
+        <a class="page-header__logo logo" href="index.html">
+          <img src="../img/logo-sedona-mobile.svg" alt="Седона" class="logo__sedona" width="102" height="83">
+        </a>
+      </div>
 
       <h1 class="page-title page-title--short">
         <img src="" class="page-title__image" alt="Промо изображение">
@@ -155,9 +158,9 @@
 
     <footer class="page-footer">
       <div class="container">
-        <div class="page-footer__hashtag hashtag">
+        <a class="page-footer__hashtag hashtag" href="#">
           <p class="hashtag__text">#visitsedona</p>
-        </div>
+        </a>
 
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -184,5 +187,6 @@
       </div>
     </footer>
 
+    <script src="js/main.js"></script>
   </body>
 </html>

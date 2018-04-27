@@ -1,7 +1,5 @@
 .main-nav {
   position: relative;
-
-  min-height: 56px;
 }
 
 .main-nav__wrapper {
@@ -14,11 +12,17 @@
   position: relative;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 1;
 }
 
 .main-nav--closed .main-nav__wrapper {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav--closed .main-nav__wrapper {
+    display: initial;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -77,6 +81,7 @@
 .main-nav--opened .main-nav__toggle {
   top: 10px;
   right: 25px;
+  z-index: 11;
 
   &::before,
   &::after {
