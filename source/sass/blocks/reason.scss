@@ -10,24 +10,48 @@
   }
 
   &--grey {
-    min-height: 167px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $grey;
     color: $black;
+
+    padding-top: 28px;
+    padding-left: 33px;
+    padding-right: 33px;
   }
+}
+
+.reason--grey:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 280px;
+  background-color: $light-text;
+  top: 166px;
+}
+
+.reason--grey > .reason__title {
+  margin-bottom: 2px;
+}
+
+.reason--grey > .reason__text {
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .reason--blue {
     flex-direction: row;
     justify-content: space-between;
-    height: 260px;
+    min-height: 260px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .reason--grey {
     width: 256px;
-    height: 256px;
+    min-height: 256px;
   }
 }
 
@@ -38,7 +62,35 @@
 }
 
 .reason__info {
-  height: 193px;
+  text-align: center;
+
+  &--one {
+    min-height: 208px;
+  }
+
+  &--two {
+    min-height: 190px;
+  }
+}
+
+.reason__info--one > .reason__title {
+  margin-bottom: 7px;
+  margin-top: 55px;
+}
+
+.reason__info--two > .reason__title {
+  margin-bottom: 10px;
+  margin-top: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .reason__info {
+    width: 256px;
+  }
+
+  .reason__info--two {
+    order: 2;
+  }
 }
 
 .reason__title {
@@ -57,10 +109,17 @@
   text-transform: uppercase;
 
   color: $light-text;
+
+  margin: 0;
+  margin-bottom: 14px;
 }
 
-.reason--blue > .reason__number,
-.reason--blue > .reason__text {
+.reason--grey > .reason__title {
+  margin-bottom: 8px;
+}
+
+.reason--blue .reason__number,
+.reason--blue .reason__text {
   color: $white;
 }
 
@@ -71,9 +130,40 @@
   text-transform: uppercase;
 
   color: $light-text;
+
+  margin: 0;
+  margin-bottom: 28px;
 }
 
-.reason__picture > img {
-  vertical-align: top;
-  margin: 0;
+.reason__picture {
+  width: 320px;
+  height: 260px;
+
+  &--one {
+    background-image: url("../img/main-city-mobile@1x.jpg");
+    background-size: cover;
+  }
+
+  &--two {
+    background-image: url("../img/main-bridge-mobile@1x.jpg");
+    background-size: cover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reason__picture {
+    width: 512px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason__picture {
+    width: 800px;
+
+    background-position-x: 10;
+
+    &--two {
+      order: 1;
+    }
+  }
 }

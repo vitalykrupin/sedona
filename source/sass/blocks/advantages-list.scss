@@ -1,8 +1,60 @@
 .advantages-list {
   @include list-reset();
 
+  padding-left: 69px;
+  padding-top: 35px;
+  padding-right: 20px;
+
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.advantages-list__item {
+  padding-bottom: 14px;
+}
+
+.advantages-list__item {
+
+  &--home:before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-house.svg");
+    background-position: 0 0;
+    background-size: 38px;
+    background-repeat: no-repeat;
+    fill: $primary-color;
+    top: 26px;
+    left: 21px;
+  }
+
+  &--gift:before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-gift.svg");
+    background-position: 0 0;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    top: 154px;
+    left: 24px;
+  }
+
+  &--food:before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-burger.svg");
+    background-position: 0 0;
+    background-size: 39px;
+    background-repeat: no-repeat;
+    top: 272px;
+    left: 19px;
+  }
 }
 
 @media (min-width: $tablet-width) {

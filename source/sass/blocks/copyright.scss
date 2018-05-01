@@ -1,9 +1,11 @@
 .copyright {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 
-  width: 320px;
+  width: 140px;
 }
 
 .copyright__made-by {
@@ -11,6 +13,9 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
 
   color: $black;
+
+  margin: 0;
 }

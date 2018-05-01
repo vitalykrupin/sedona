@@ -1,5 +1,6 @@
 .hashtag {
   text-decoration: none;
+  text-align: center;
 
   font-weight: 700;
   font-size: 21px;
@@ -9,4 +10,10 @@
   color: $black;
 
   width: 320px;
+
+  margin-bottom: 34px;
+}
+
+.hashtag__text {
+  margin: 0;
 }

@@ -1,8 +1,15 @@
 .page-footer {
-  height: 244px;
+  min-height: 244px;
 
   display: flex;
   flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-top: 37px;
+}
+
+.page-footer__social {
+  margin-bottom: 37px;
 }
 
 @media (min-width: $tablet-width) {

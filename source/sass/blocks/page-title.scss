@@ -1,22 +1,49 @@
 .page-title {
+  position: relative;
   margin: 0;
 
   width: 320px;
   height: 389px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  text-align: center;
 
   &--short {
     height: 159px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+
+.page-title__image {
+  vertical-align: middle;
+  margin-top: 91px;
 }
 
 @media (min-width: $tablet-width) {
   .page-title {
     width: 768px;
     min-height: 518px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   &--short {
@@ -25,7 +52,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page.title {
+  .page-title {
     width: 1200px;
   }
 
