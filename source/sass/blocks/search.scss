@@ -33,3 +33,29 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.search__text br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .search {
+    padding-top: 58px;
+    margin-bottom: 59px;
+  }
+
+  .search__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .search__text {
+    width: 460px;
+    padding: 0;
+    margin-bottom: 42px;
+  }
+
+  .search__text br {
+    display: initial;
+  }
+}

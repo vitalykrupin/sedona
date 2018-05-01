@@ -14,22 +14,10 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    height: 160px;
-  }
-}
-
-.page-footer > .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer > .container {
+    padding: 0;
     flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
+    min-height: 120px;
   }
 }

@@ -17,3 +17,10 @@
 .hashtag__text {
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .hashtag {
+    width: auto;
+    margin: 0;
+  }
+}

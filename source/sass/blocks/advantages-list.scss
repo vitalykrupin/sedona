@@ -57,28 +57,6 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .advantages-list {
-    flex-direction: row;
-
-    height: 330px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .advantages-list__item {
-    width: 256px;
-    height: 330px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages-list__item {
-    width: 400px;
-    height: 331px;
-  }
-}
-
 .advantages-list__title {
   font-weight: 700;
   font-size: 18px;
@@ -97,4 +75,81 @@
   text-transform: uppercase;
 
   color: $light-text;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-list {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .advantages-list__title {
+    font-size: 21px;
+    vertical-align: middle;
+    margin-bottom: 21px;
+    margin-top: 100px;
+  }
+
+  .advantages-list__text {
+    margin: 0;
+    text-align: start;
+  }
+
+  .advantages-list__item {
+    width: 256px;
+    min-height: 330px;
+    padding-bottom: 0;
+    // padding-top: 100px;
+    padding-left: 45px;
+    padding-right: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--home:before {
+      width: 80px;
+      height: 77px;
+      background-image: url("../img/icon-house.svg");
+      background-position: 0 0;
+      background-size: 74px;
+      background-repeat: no-repeat;
+      fill: $primary-color;
+      top: 61px;
+      left: 90px;
+    }
+
+    &--gift:before {
+      width: 80px;
+      height: 77px;
+      background-image: url("../img/icon-gift.svg");
+      background-position: 0 0;
+      background-size: 65px;
+      background-repeat: no-repeat;
+      top: 57px;
+      left: 607px;
+    }
+
+    &--food:before {
+      width: 80px;
+      height: 77px;
+      background-image: url("../img/icon-burger.svg");
+      background-position: 0 0;
+      background-size: 75px;
+      background-repeat: no-repeat;
+      top: 64px;
+      left: 346px;
+    }
+  }
+
+  .advantages-list__item:nth-child(2) {
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-list__item {
+    width: 400px;
+    min-height: 331px;
+  }
 }
