@@ -1,0 +1,17 @@
+.likes-counter {
+  position: relative;
+  padding-left: 35px;
+  padding-top: 11px;
+}
+
+.likes-counter::before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  content: "";
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+}
+

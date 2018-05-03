@@ -1,3 +1,9 @@
+.video {
+  position: relative;
+  padding-top: 10px;
+  margin-bottom: 103px;
+}
+
 .video__title {
   font-weight: 700;
   font-size: 18px;
@@ -5,6 +11,9 @@
   text-transform: uppercase;
 
   color: $black;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 26px;
 }
 
 .video__text {
@@ -14,4 +23,19 @@
   text-transform: uppercase;
 
   color: $light-text;
+  margin: 0;
+  margin-bottom: 36px;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 24px;
+}
+
+.video__content {
+  vertical-align: top;
+}
+
+.video__player {
+  position: absolute;
+  bottom: -65px;
+  left: 20px;
 }

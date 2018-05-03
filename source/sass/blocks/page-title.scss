@@ -36,6 +36,10 @@
   margin-top: 91px;
 }
 
+.page-title--short .page-title__image {
+  margin-top: 50px;
+}
+
 @media (min-width: $tablet-width) {
   .page-title {
     width: 768px;
@@ -82,5 +86,24 @@
 
   &--short {
     height: 301px;
+  }
+
+  .page-title::before {
+    width: 700px;
+    left: 250px;
+  }
+
+  .page-title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -26px;
+    z-index: 1;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
   }
 }

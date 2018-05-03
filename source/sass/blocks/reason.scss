@@ -41,6 +41,10 @@
   margin: 0;
 }
 
+.reason__title br {
+  display: none;
+}
+
 .reason--grey > .reason__title {
   margin-bottom: 8px;
 }
@@ -100,6 +104,29 @@
   &--two {
     background-image: url("../img/main-bridge-mobile@1x.jpg");
     background-size: cover;
+  }
+}
+
+.reason__info {
+  text-align: center;
+
+  &--one {
+    min-height: 206px;
+  }
+
+  &--two {
+    min-height: 190px;
+  }
+
+  .reason__picture {
+    width: 800px;
+    height: 256px;
+
+    background-position-x: 10;
+
+    &--two {
+      order: 1;
+    }
   }
 }
 
@@ -181,27 +208,40 @@
   .reason--grey {
     width: 400px;
   }
-}
 
-.reason__info {
-  text-align: center;
-
-  &--one {
-    min-height: 208px;
-  }
-
-  &--two {
-    min-height: 190px;
+  .reason__info {
+    width: 400px;
   }
 
   .reason__picture {
     width: 800px;
-    height: 256px;
+  }
 
-    background-position-x: 10;
+  .reason--blue .reason__title {
+    padding-left: 93px;
+    padding-right: 93px;
+  }
 
-    &--two {
-      order: 1;
-    }
+  .reason__info--one > .reason__title {
+    margin-top: 53px;
+  }
+
+  .reason__info--two > .reason__title {
+    margin-top: 54px;
+  }
+
+  .reason__info--two > .reason__text {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .reason__title br {
+    display: initial;
+  }
+
+  .reason--grey > .reason__title {
+    padding-left: 88px;
+    padding-right: 88px;
+    margin-bottom: 8px;
   }
 }

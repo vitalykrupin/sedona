@@ -1,0 +1,58 @@
+.player {
+  height: 111px;
+  width: 280px;
+}
+
+.player__scale-block {
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.player__scale {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    width: 235px;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 58px;
+    width: 9px;
+    height: 9px;
+    background-color: $white;
+    border-radius: 50%;
+  }
+}
+
+.player__button-block {
+  position: relative;
+  height: 66px;
+  background-color: $input-color;
+}
+
+.player__replay-btn {
+  position: absolute;
+  top: 20px;
+  left: 17px;
+}
+
+.player__subtitles-btn {
+  position: absolute;
+  top: 21px;
+  right: 66px;
+}
+
+.player__fullscreen-btn {
+  position: absolute;
+  top: 21px;
+  right: 15px;
+}
