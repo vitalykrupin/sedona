@@ -5,3 +5,14 @@
   padding-top: 37px;
   margin-bottom: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .media .content-header__title {
+    font-size: 30px;
+    margin-bottom: 29px;
+  }
+
+  .media .content-header {
+    margin-bottom: 67px;
+  }
+}

@@ -43,16 +43,96 @@
   position: absolute;
   top: 20px;
   left: 17px;
+  border: none;
+  background-color: transparent;
+  fill: #858585;
 }
 
 .player__subtitles-btn {
   position: absolute;
   top: 21px;
   right: 66px;
+  border: none;
+  background-color: transparent;
+  fill: #858585;
 }
 
 .player__fullscreen-btn {
   position: absolute;
   top: 21px;
   right: 15px;
+  border: none;
+  background-color: transparent;
+  fill: #858585;
+}
+
+@media (min-width: $tablet-width) {
+  .player {
+    height: 93px;
+  }
+
+  .player__scale-block {
+    width: 648px;
+    height: 93px;
+    position: relative;
+  }
+
+  .player__scale {
+    position: relative;
+
+    &::before {
+      top: 43px;
+      left: 92px;
+      width: 389px;
+      height: 3px;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &::after {
+      top: 40px;
+      left: 206px;
+      background-color: $white;
+    }
+  }
+
+  .player__button-block {
+    width: 648px;
+    height: 93px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+
+  .player__replay-btn {
+    top: 32px;
+    left: 28px;
+    fill: $white;
+  }
+
+  .player__subtitles-btn {
+    top: 33px;
+    right: 85px;
+    fill: $white;
+  }
+
+  .player__fullscreen-btn {
+    top: 33px;
+    right: 34px;
+    fill: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .player {
+    left: 200px;
+  }
+  
+  .player__scale-block {
+    width: 800px;
+  }
+
+  .player__button-block {
+    width: 800px;
+  }
 }
