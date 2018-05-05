@@ -104,3 +104,13 @@
 .feedback-form__control {
   margin-right: auto;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback-form fieldset {
+    border: none;
+  }
+
+  .feedback-form__header {
+    border: none;
+  }
+}
