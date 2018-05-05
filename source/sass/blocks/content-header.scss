@@ -1,6 +1,7 @@
 .content-header {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
+  min-height: 206px;
 
   &::before {
     content: "";
@@ -27,7 +28,7 @@
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
   padding-top: 41px;
   text-align: center;
 }

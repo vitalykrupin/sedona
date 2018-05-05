@@ -1,10 +1,11 @@
 .guest-impressions {
-  min-height: 290px;
-  border: none;
+  min-height: 271px;
+  margin-bottom: 18px;
 }
 
 .guest-impressions__title {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {

@@ -113,22 +113,22 @@
 
           <ul class="guest-visited-places__list visited-places-list">
             <li class="visited-places-list__item visited-places-list__item--active">
-              <input type="checkbox" class="feedback-form__input feedback-form__input--checkbox" name="visited-place" value="devil-bridge" id="devil-bridge" checked>
+              <input type="checkbox" class="feedback-form__input feedback-form__input--checkbox visually-hidden" name="visited-place" value="devil-bridge" id="devil-bridge" checked>
               <label for="devil-bridge" class="feedback-form__label feedback-form__label--checkbox">Мост Дьявола</label>
             </li>
 
             <li class="visited-places-list__item visited-places-list__item--active visited-place">
-              <input type="checkbox" class="feedback-form__input feedback-form__input--checkbox" name="visited-place" value="bell-mountain" id="bell-mountain" checked>
+              <input type="checkbox" class="feedback-form__input feedback-form__input--checkbox visually-hidden" name="visited-place" value="bell-mountain" id="bell-mountain" checked>
               <label for="bell-mountain" class="feedback-form__label feedback-form__label--checkbox">Гора-Колокол</label>
             </li>
 
             <li class="visited-places-list__item visited-places-list__item--active visited-place">
-              <input type="checkbox" class="feedback-form__input feedback-form__input--checkbox" name="visited-place" value="slide-park" id="slide-park" checked>
+              <input type="checkbox" class="feedback-form__input feedback-form__input--checkbox visually-hidden" name="visited-place" value="slide-park" id="slide-park" checked>
               <label for="slide-park" class="feedback-form__label feedback-form__label--checkbox">Слайд-парк</label>
             </li>
 
             <li class="visited-places-list__item visited-place">
-              <input type="checkbox" class="feedback-form__input feedback-form__input--checkbox" name="visited-place" value="red-rocks" id="red-rocks">
+              <input type="checkbox" class="feedback-form__input feedback-form__input--checkbox visually-hidden" name="visited-place" value="red-rocks" id="red-rocks">
               <label for="red-rocks" class="feedback-form__label feedback-form__label--checkbox">Красные скалы</label>
             </li>
           </ul>
@@ -143,13 +143,13 @@
         </fieldset>
       </form>
 
-      <div class="failure-popup">
+      <div class="failure-popup visually-hidden">
         <h2 class="failure-popup__title">Что-то пошло не так!</h2>
         <p class="failure-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button type="button" class="failure-popup__button button">Ок</button>
       </div>
 
-      <div class="success-popup">
+      <div class="success-popup visually-hidden">
         <h2 class="success-popup__title">Ваш отзыв отправлен!</h2>
         <p class="success-popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         <button type="button" class="success-popup__button button">Закрыть окно</button>
@@ -157,33 +157,31 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
-        <a class="page-footer__hashtag hashtag" href="#">
-          <p class="hashtag__text">#visitsedona</p>
+      <a class="page-footer__hashtag hashtag" href="#">
+        <p class="hashtag__text">#visitsedona</p>
+      </a>
+
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Мы в Твиттере</span></a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.youtube.com/htmlacademyru"><span class="visually-hidden"> Мы в Ютьюб</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__made-by">Разработано</p>
+        <a class="copyright__link logo-academy">
+          <img class="logo-academy__image" src="http://placehold.it/150x100" width="27" height="34">
         </a>
-
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Мы в Твиттере</span></a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.youtube.com/htmlacademyru"><span class="visually-hidden"> Мы в Ютьюб</span></a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__made-by">Разработано</p>
-          <a class="copyright__link logo-academy">
-            <img class="logo-academy__image" src="http://placehold.it/150x100" width="27" height="34">
-          </a>
-        </div>
       </div>
     </footer>
 
