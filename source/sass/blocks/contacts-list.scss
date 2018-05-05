@@ -5,15 +5,48 @@
   flex-direction: column;
 }
 
-@media (min-width: $desktop-width) {
-  .contacts-list {
-    flex-direction: row;
+.contacts-list__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+
+  &--phone {
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 31px;
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--email {
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 31px;
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 
-.contacts-list__item {
-  display: flex;
-  flex-direction: column;
+.contacts-list .feedback-form__label {
+  padding-left: 22px;
+  margin-bottom: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,6 +56,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts-list {
+    flex-direction: row;
+  }
+
   .contacts-list__item {
     flex-direction: row;
     width: 50%;

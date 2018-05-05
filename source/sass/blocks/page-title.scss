@@ -3,7 +3,6 @@
   margin: 0;
 
   width: 320px;
-  min-height: 389px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -12,8 +11,12 @@
 
   text-align: center;
 
+  &--index {
+    min-height: 389px;
+  }
+
   &--short {
-    height: 159px;
+    height: 155px;
   }
 
   &::before {
@@ -94,7 +97,7 @@
       min-height: 301px;
     }
   }
-  
+
   .page-title::before {
     width: 700px;
     left: 250px;

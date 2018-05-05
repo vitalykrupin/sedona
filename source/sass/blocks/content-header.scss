@@ -46,6 +46,15 @@
   text-align: center;
 }
 
+.form .content-header__description {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.form .content-header::before {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .content-header {
     width: 768px;

@@ -39,11 +39,11 @@
       </div>
 
       <h1 class="page-title page-title--short">
-        <img src="" class="page-title__image" alt="Промо изображение">
+        <img src="../img/text-sedona.svg" class="page-title__image" alt="Промо изображение" height="40" width="232">
       </h1>
     </header>
 
-    <main class="page-main">
+    <main class="page-main form">
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <header class="feedback-form__header content-header">
           <h2 class="content-header__title">Оставьте свой отзыв</h2>
@@ -75,12 +75,12 @@
           <legend class="guest-contacts__title">Контактная информация:</legend>
 
           <ul class="guest-contacts__list contacts-list">
-            <li class="contacts-list__item">
+            <li class="contacts-list__item contacts-list__item--phone">
               <label for="phone" class="feedback-form__label feedback-form__label--text">Контактный телефон<sup>*</sup>:</label>
               <input type="tel" class="feedback-form__input feedback-form__input--text" name="tel" id="phone" placeholder="Введите телефон">
             </li>
 
-            <li class="contacts-list__item">
+            <li class="contacts-list__item contacts-list__item--email">
               <label for="email" class="feedback-form__label feedback-form__label--text">Электронная почта<sup>*</sup>:</label>
               <input type="email" class="feedback-form__input feedback-form__input--text" name="email" id="email" placeholder="Введите e-mail">
             </li>
@@ -92,17 +92,17 @@
 
           <ul class="guest-impressions__list impressions-list">
             <li class="impressions-list__item impressions-list__item--active">
-              <input type="radio" class="feedback-form__input feedback-form__input--radio" name="impression" value="positive" id="impression-positive" checked>
+              <input type="radio" class="feedback-form__input feedback-form__input--radio visually-hidden" name="impression" value="positive" id="impression-positive" checked>
               <label for="impression-positive" class="feedback-form__label feedback-form__label--radio">Скорее положительное</label>
             </li>
 
             <li class="impressions-list__item">
-              <input type="radio" class="feedback-form__input feedback-form__input--radio" name="impression" value="negative" id="impression-negative">
+              <input type="radio" class="feedback-form__input feedback-form__input--radio visually-hidden" name="impression" value="negative" id="impression-negative">
               <label for="impression-negative" class="feedback-form__label feedback-form__label--radio">Скорее отрицательное</label>
             </li>
 
             <li class="impressions-list__item">
-              <input type="radio" class="feedback-form__input feedback-form__input--radio" name="impression" value="other" id="impression-other">
+              <input type="radio" class="feedback-form__input feedback-form__input--radio visually-hidden" name="impression" value="other" id="impression-other">
               <label for="impression-other" class="feedback-form__label feedback-form__label--radio">Затрудняюсь ответить</label>
             </li>
           </ul>

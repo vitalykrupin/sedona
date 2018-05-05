@@ -3,6 +3,15 @@
   border: none;
 }
 
+.guest-name__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedback-form__input--text {
+  // padding-left: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .guest-name {
     width: 50%;

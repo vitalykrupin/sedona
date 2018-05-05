@@ -12,6 +12,10 @@
   flex-direction: column;
 }
 
+.guest-emotions__title {
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .guest-emotions {
     order: 5;

@@ -4,3 +4,40 @@
   display: flex;
   flex-direction: column;
 }
+
+.impressions-list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.impressions-list__item input {
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 57px;
+    height: 57px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
+}
+
+.impressions-list__item input:checked::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 57px;
+  height: 57px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.impressions-list__item {
+  width: 57px;
+  height: 57px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}

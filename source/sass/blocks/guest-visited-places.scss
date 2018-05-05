@@ -3,6 +3,10 @@
   border: none;
 }
 
+.guest-visited-places__title {
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .guest-visited-places {
     order: 4;
