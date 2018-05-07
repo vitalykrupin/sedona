@@ -15,36 +15,36 @@
     width: 100%;
     margin-bottom: 30px;
   }
-}
 
-.guest-contacts__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: $black;
-  font-size: 21px;
-  margin-bottom: 24px;
-  position: relative;
+  .guest-contacts__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: $black;
+    font-size: 21px;
+    margin-bottom: 24px;
+    position: relative;
 
-  &::before {
-    position: absolute;
-    top: 12px;
-    left: -185px;
-    content: "";
-    width: 125px;
-    height: 1px;
-    background-color: #f2f2f2;
-  }
+    &::before {
+      position: absolute;
+      top: 12px;
+      left: -185px;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: #f2f2f2;
+    }
 
-  &::after {
-    position: absolute;
-    top: 12px;
-    right: -185px;
-    content: "";
-    width: 125px;
-    height: 1px;
-    background-color: #f2f2f2;
+    &::after {
+      position: absolute;
+      top: 12px;
+      right: -185px;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: #f2f2f2;
+    }
   }
 }
 
@@ -52,7 +52,7 @@
   .guest-contacts {
     min-height: initial;
   }
-  
+
   .guest-contacts__title {
     margin-bottom: 73px;
 
