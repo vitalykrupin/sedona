@@ -1,22 +1,7 @@
 .guest-name {
   min-height: 287px;
   margin-bottom: 19px;
-}
-
-.guest-name__title {
-  text-align: center;
-  margin-bottom: 22px;
-}
-
-.feedback-form__input--text {
-  // padding-left: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .guest-name {
-    width: 50%;
-    order: 2;
-  }
+  width: 100%;
 }
 
 .guest-name__title {
@@ -24,6 +9,22 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-
   color: $black;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .guest-name {
+    width: 50%;
+    order: 2;
+    margin-bottom: 48px;
+  }
+
+  .guest-name__title {
+    text-align: initial;
+    margin-left: 59px;
+    margin-bottom: 59px;
+    font-size: 21px;
+  }
 }

@@ -1,9 +1,15 @@
 .guest-impressions {
   min-height: 271px;
   margin-bottom: 18px;
+  width: 100%;
 }
 
 .guest-impressions__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $black;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -12,14 +18,12 @@
   .guest-impressions {
     order: 1;
     width: 50%;
+    margin-bottom: 48px;
   }
-}
 
-.guest-impressions__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-
-  color: $black;
+  .guest-impressions__title {
+    text-align: start;
+    font-size: 21px;
+    margin-bottom: 59px;
+  }
 }

@@ -12,7 +12,6 @@
   margin-left: 0;
   margin-top: 0;
   margin-right: 0;
-  width: 100%;
 
   border-top: none;
   border-left: none;
@@ -105,12 +104,36 @@
   margin-right: auto;
 }
 
+.feedback-form__required-fields {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .feedback-form fieldset {
     border: none;
+    padding: 0;
   }
 
   .feedback-form__header {
     border: none;
+    margin-bottom: 9px;
+  }
+
+  .feedback-form__input {
+    &--text {
+      padding-left: 21px;
+    }
+  }
+
+  .feedback-form__control {
+    width: 324px;
+  }
+
+  .feedback-form__required-fields {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
   }
 }

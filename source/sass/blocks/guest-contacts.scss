@@ -1,6 +1,7 @@
 .guest-contacts {
   min-height: 268px;
   margin-bottom: 18px;
+  width: 100%;
 }
 
 .guest-contacts__title {
@@ -12,6 +13,7 @@
   .guest-contacts {
     order: 3;
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -20,6 +22,28 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-
   color: $black;
+  font-size: 21px;
+  margin-bottom: 24px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 12px;
+    left: -185px;
+    content: "";
+    width: 125px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+
+  &::after {
+    position: absolute;
+    top: 12px;
+    right: -185px;
+    content: "";
+    width: 125px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
 }

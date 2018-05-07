@@ -73,6 +73,15 @@
   .content-header__title br {
     display: none;
   }
+
+  .form .content-header__description {
+    width: 440px;
+    margin: 0 auto;
+  }
+
+  .form .content-header__title {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {

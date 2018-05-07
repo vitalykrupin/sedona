@@ -3,7 +3,7 @@
 
   display: flex;
   flex-direction: column;
-  // align-items: flex-end;
+  align-items: flex-start;
 }
 
 .name-list__item {
@@ -22,5 +22,11 @@
 }
 
 .name-list__item > .feedback-form__input {
-  flex-grow: 1;
+  flex-grow: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .name-list {
+    align-items: flex-start;
+  }
 }

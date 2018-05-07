@@ -5,7 +5,8 @@
 
   color: $black;
 
-  height: 331px;
+  min-height: 331px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -14,13 +15,6 @@
 .guest-emotions__title {
   text-align: center;
   margin-bottom: 15px;
-}
-
-@media (min-width: $tablet-width) {
-  .guest-emotions {
-    order: 5;
-    width: 100%;
-  }
 }
 
 .guest-emotions__title {
@@ -76,7 +70,41 @@
 }
 
 @media (min-width: $tablet-width) {
+  .guest-emotions {
+    order: 5;
+    width: 100%;
+  }
+
+  .guest-emotions__title {
+    font-size: 21px;
+    position: relative;
+    margin-bottom: 57px;
+
+    &::before {
+      position: absolute;
+      top: 12px;
+      left: -200px;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: #f2f2f2;
+    }
+
+    &::after {
+      position: absolute;
+      top: 12px;
+      right: -200px;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: #f2f2f2;
+    }
+  }
+
   .guest-emotions__text {
     width: 100%;
+    padding-left: 21px;
+    padding-top: 16px;
+    margin-bottom: 58px;
   }
 }

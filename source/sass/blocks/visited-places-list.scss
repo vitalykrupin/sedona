@@ -45,10 +45,17 @@
   .visited-places-list {
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
+    // width: 480px;
   }
 
   .visited-places-list__item {
+    // width: 230px;
     width: 50%;
+  }
+
+  .visited-places-list__item:nth-child(even) {
+    // margin-left: 10px;
   }
 }
 
