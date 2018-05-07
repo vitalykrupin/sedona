@@ -14,38 +14,8 @@
   height: 58px;
 }
 
-.feedback-form__label--radio {
-  margin-left: 79px;
-}
-
-.feedback-form__input--radio + label::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 57px;
-  height: 57px;
-  background-color: #f2f2f2;
-  border-radius: 50%;
-}
-
-.feedback-form__input--radio:checked + label::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 57px;
-  height: 57px;
-  background-color: #333333;
-  border-radius: 50%;
-  border: 18px solid #f2f2f2;
-}
-
 @media (min-width: $tablet-width) {
   .impressions-list__item {
     margin-bottom: 20px;
-  }
-
-  .feedback-form__label--radio {
-    margin-left: 76px;
   }
 }

@@ -53,15 +53,12 @@
     // width: 230px;
     width: 50%;
   }
-
-  .visited-places-list__item:nth-child(even) {
-    // margin-left: 10px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .visited-places-list__item {
     flex-direction: row;
     width: 25%;
+    margin-bottom: 0;
   }
 }

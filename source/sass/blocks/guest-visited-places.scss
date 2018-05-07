@@ -47,6 +47,26 @@
       background-color: #f2f2f2;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .guest-visited-places {
+      margin-bottom: 66px;
+    }
+
+    .guest-visited-places__title {
+      margin-bottom: 39px;
+
+      &::before {
+        width: 280px;
+        left: -337px;
+      }
+
+      &::after {
+        width: 280px;
+        right: -337px;
+      }
+    }
+  }
 }
 
 

@@ -63,6 +63,25 @@
 
   .contacts-list__item {
     flex-direction: row;
+    align-items: center;
     width: 50%;
+
+    &--phone::before {
+      top: 0;
+    }
+
+    &--email::before {
+      top: 0;
+    }
+  }
+
+  .contacts-list .feedback-form__label {
+    padding-left: 0;
+    padding-right: 16px;
+    margin-bottom: 0;
+  }
+
+  .contacts-list__item input {
+    flex-flow: 1;
   }
 }

@@ -27,3 +27,10 @@
     margin-bottom: 59px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .guest-impressions__title {
+    margin-left: 80px;
+    margin-bottom: 57px;
+  }
+}
