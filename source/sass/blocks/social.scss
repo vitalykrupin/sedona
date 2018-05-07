@@ -22,6 +22,30 @@
   margin-right: 6px;
 }
 
+.social__link {
+  width: 100%;
+  height: 100%;
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+
+  }
+
+  &--facebook {
+    background-image: url("../img/icon-facebook.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    fill: $white;
+  }
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    fill: $white;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .social {
     width: auto;
