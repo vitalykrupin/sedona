@@ -45,7 +45,15 @@
   left: 17px;
   border: none;
   background-color: transparent;
-  fill: #858585;
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #b8b8b8;
+  }
 }
 
 .player__subtitles-btn {
@@ -54,7 +62,15 @@
   right: 66px;
   border: none;
   background-color: transparent;
-  fill: #858585;
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #b8b8b8;
+  }
 }
 
 .player__fullscreen-btn {
@@ -63,7 +79,15 @@
   right: 15px;
   border: none;
   background-color: transparent;
-  fill: #858585;
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #b8b8b8;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -108,18 +132,42 @@
     top: 32px;
     left: 28px;
     fill: $white;
+
+    &:hover {
+      fill: #c2c2c2;
+    }
+
+    &:active {
+      fill: #949494;
+    }
   }
 
   .player__subtitles-btn {
     top: 33px;
     right: 85px;
     fill: $white;
+
+    &:hover {
+      fill: #c2c2c2;
+    }
+
+    &:active {
+      fill: #949494;
+    }
   }
 
   .player__fullscreen-btn {
     top: 33px;
     right: 34px;
     fill: $white;
+
+    &:hover {
+      fill: #c2c2c2;
+    }
+
+    &:active {
+      fill: #949494;
+    }
   }
 }
 
@@ -127,7 +175,7 @@
   .player {
     left: 200px;
   }
-  
+
   .player__scale-block {
     width: 800px;
   }

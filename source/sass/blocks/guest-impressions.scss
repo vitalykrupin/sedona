@@ -19,6 +19,17 @@
     order: 1;
     width: 50%;
     margin-bottom: 48px;
+    position: relative;
+  }
+
+  .guest-impressions::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 2px;
+    height: 292px;
+    background-color: #f2f2f2;
   }
 
   .guest-impressions__title {

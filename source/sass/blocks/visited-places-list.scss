@@ -14,33 +14,6 @@
   height: 58px;
 }
 
-.feedback-form__label--checkbox {
-  margin-left: 79px;
-}
-
-.feedback-form__input--checkbox + label::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 57px;
-  height: 57px;
-  background-color: #f2f2f2;
-  border-radius: 5%;
-}
-
-.feedback-form__input--checkbox:checked + label::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 57px;
-  height: 57px;
-  background-image: url("../img/icon-tick.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10%;
-}
-
 @media (min-width: $tablet-width) {
   .visited-places-list {
     flex-direction: row;

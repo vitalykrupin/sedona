@@ -19,12 +19,44 @@
   min-height: 56px;
 
   background-color: $primary-color;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.site-list__link {
+  width: 100%;
+  text-align: center;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .site-list__item {
     background-color: transparent;
     width: 20%;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .site-list__link {
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #b2b2b2;
+    }
   }
 
   .site-list__item:nth-child(2) {

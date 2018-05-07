@@ -34,6 +34,10 @@
   .main-nav--closed .main-nav__wrapper {
     display: initial;
   }
+
+  .main-nav__wrapper::after {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
