@@ -22,13 +22,14 @@
   margin-right: 6px;
 }
 
-.social__link {
+.social__ {
   width: 100%;
   height: 100%;
 
   &--youtube {
     background-image: url("../img/icon-youtube.svg");
-
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   &--facebook {
