@@ -136,6 +136,8 @@
   .reason--grey {
     flex-direction: column;
     padding-top: 47px;
+    width: 256px;
+    min-height: 256px;
   }
 
   .reason--grey > .reason__title {
@@ -170,11 +172,6 @@
   .reason__info--one > .reason__title {
     margin-top: 46px;
     margin-bottom: 9px;
-  }
-
-  .reason--grey {
-    width: 256px;
-    min-height: 256px;
   }
 
   .reason__info {

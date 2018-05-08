@@ -14,7 +14,7 @@
 .advantages-list__item {
   padding-bottom: 14px;
 
-  &--gift:before {
+  &--gift::before {
     position: absolute;
     content: "";
     width: 40px;
@@ -27,7 +27,7 @@
     left: 24px;
   }
 
-  &--food:before {
+  &--food::before {
     position: absolute;
     content: "";
     width: 40px;
@@ -39,20 +39,20 @@
     top: 272px;
     left: 19px;
   }
-}
 
-.advantages-list__item--home:before {
-  position: absolute;
-  content: "";
-  width: 40px;
-  height: 40px;
-  background-image: url("../img/icon-house.svg");
-  background-position: 0 0;
-  background-size: 38px;
-  background-repeat: no-repeat;
-  fill: $primary-color;
-  top: 26px;
-  left: 21px;
+  &--home::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-house.svg");
+    background-position: 0 0;
+    background-size: 38px;
+    background-repeat: no-repeat;
+    fill: $primary-color;
+    top: 26px;
+    left: 21px;
+  }
 }
 
 .advantages-list__title {
@@ -60,9 +60,7 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-
   margin: 0;
-
   color: $black;
 }
 
@@ -71,7 +69,6 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-
   color: $light-text;
 }
 
@@ -110,7 +107,7 @@
     justify-content: center;
     align-items: center;
 
-    &--home:before {
+    &--home::before {
       width: 80px;
       height: 77px;
       background-image: url("../img/icon-house.svg");
@@ -122,7 +119,7 @@
       left: 90px;
     }
 
-    &--gift:before {
+    &--gift::before {
       width: 80px;
       height: 77px;
       background-image: url("../img/icon-gift.svg");
@@ -133,7 +130,7 @@
       left: 607px;
     }
 
-    &--food:before {
+    &--food::before {
       width: 80px;
       height: 77px;
       background-image: url("../img/icon-burger.svg");
@@ -155,15 +152,15 @@
     width: 400px;
     min-height: 331px;
 
-    &--home:before {
+    &--home::before {
       left: 161px;
     }
 
-    &--gift:before {
+    &--gift::before {
       left: 967px;
     }
 
-    &--food:before {
+    &--food::before {
       left: 562px;
     }
   }
