@@ -4,7 +4,6 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
   width: 140px;
 }
 
@@ -14,8 +13,16 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-
   color: $black;
-
   margin: 0;
+}
+
+.copyright__link {
+  &:hover {
+    fill: $primary-color;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
 }
