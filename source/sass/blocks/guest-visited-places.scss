@@ -19,13 +19,14 @@
     order: 4;
     width: 100%;
     min-height: initial;
-    margin-bottom: 79px;
+    margin-bottom: 40px;
   }
 
   .guest-visited-places__title {
     font-size: 21px;
     width: 286px;
     position: relative;
+    margin-bottom: 17px;
 
     &::before {
       position: absolute;
@@ -54,7 +55,7 @@
     }
 
     .guest-visited-places__title {
-      margin-bottom: 39px;
+      margin-bottom: 15px;
 
       &::before {
         width: 280px;

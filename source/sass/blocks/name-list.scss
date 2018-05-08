@@ -24,5 +24,12 @@
 @media (min-width: $tablet-width) {
   .name-list {
     align-items: flex-start;
+    padding-left: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .name-list {
+    padding-left: 80px;
   }
 }

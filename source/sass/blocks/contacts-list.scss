@@ -9,7 +9,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 
   &--phone {
     &::before {
@@ -64,18 +64,32 @@
     align-items: center;
     width: 50%;
 
-    &--phone::before {
-      top: 0;
+    &--phone {
+      padding-right: 80px;
+
+      &::before {
+        top: 0;
+        right: 80px;
+      }
+
+      & .feedback-form__label {
+        margin-right: 17px;
+      }
     }
 
-    &--email::before {
-      top: 0;
+    &--email {
+      &::before {
+        top: 0;
+      }
+
+      & .feedback-form__label {
+        width: 256px;
+      }
     }
   }
 
   .contacts-list .feedback-form__label {
     padding-left: 0;
-    padding-right: 16px;
     margin-bottom: 0;
   }
 

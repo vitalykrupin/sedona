@@ -1,10 +1,7 @@
 .media .content-header {
-  margin-bottom: 26px;
-}
-
-.media .content-header {
   min-height: initial;
   position: relative;
+  margin-bottom: 26px;
 
   &::after {
     content: "";
