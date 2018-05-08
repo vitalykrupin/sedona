@@ -6,6 +6,37 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+<!— Pixel Glass —>
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url( "img/sedona-index-mobilePP.jpg" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/sedona-index-tabletPP.jpg" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/sedona-index-desktopPP.jpg" );
+        }
+      }
+
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+<!— // Pixel Glass —>
+
   </head>
   <body class="body">
     <div class="container">
@@ -47,7 +78,7 @@
       <main class="page-main">
         <section class="page-main__reasons reasons">
           <header class="reasons__header content-header">
-            <h2 class="content-header__title">Седона — небольшой<br> городок в Аризоне, заслуживающий большего!</h2>
+            <h2 class="content-header__title">Седона 	&ndash; небольшой<br> городок в Аризоне, заслуживающий большего!</h2>
             <p class="content-header__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </header>
 
@@ -56,7 +87,7 @@
               <div class="reason__info reason__info--one">
                 <h2 class="reason__title">Настоящий городок</h2>
                 <p class="reason__number">&ndash; №1 &ndash;</p>
-                <p class="reason__text">Седона не аттракцион для туристов,<br> там течет своя жизнь</p>
+                <p class="reason__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
 
               <div class="reason__picture reason__picture--one"></div>
@@ -85,7 +116,7 @@
               <div class="reason__info reason__info--two">
                 <h3 class="reason__title">Там есть<br> мост дьявола</h3>
                 <p class="reason__number">&ndash; №2 &ndash;</p>
-                <p class="reason__text">Да, по не можно пройти! Если вы осмелитесь, конечно</p>
+                <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
 
               <div class="reason__picture reason__picture--two"></div>

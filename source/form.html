@@ -6,6 +6,37 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!— Pixel Glass —>
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url( "img/sedona-form-mobilePP.jpg" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/sedona-form-tabletPP.jpg" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/sedona-form-desktopPP.jpg" );
+        }
+      }
+
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+<!— // Pixel Glass —>
+
   </head>
   <body class="body">
     <div class="container">
@@ -14,7 +45,7 @@
           <button type="button" class="main-nav__toggle"></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
+              <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
               </li>
 
@@ -22,7 +53,7 @@
                 <a class="site-list__link" href="photo.html">Фото и видео</a>
               </li>
 
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a class="site-list__link">Форма отзыва</a>
               </li>
 

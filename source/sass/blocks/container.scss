@@ -2,6 +2,7 @@
   margin: 0 auto;
   width: 320px;
   background-color: $white;
+  box-shadow: 0 0 25px -10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,6 +14,5 @@
 @media (min-width: $desktop-width) {
   .container {
     width: 1200px;
-    box-shadow: 0 0 25px -10px;
   }
 }

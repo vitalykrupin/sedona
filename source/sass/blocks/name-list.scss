@@ -1,9 +1,5 @@
 .name-list {
   @include list-reset();
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .name-list__item {

@@ -17,7 +17,7 @@
     background-color: $grey;
     color: $black;
 
-    padding-top: 28px;
+    padding-top: 30px;
     padding-left: 33px;
     padding-right: 33px;
   }
@@ -53,13 +53,13 @@
 }
 
 .reason__info--one > .reason__title {
-  margin-bottom: 7px;
+  margin-bottom: 9px;
   margin-top: 55px;
 }
 
 .reason__info--two > .reason__title {
   margin-bottom: 10px;
-  margin-top: 37px;
+  margin-top: 39px;
 }
 
 .reason__number {
@@ -71,7 +71,7 @@
   color: $light-text;
 
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .reason--blue .reason__number,
@@ -87,6 +87,7 @@
   color: $light-text;
   margin: 0;
   margin-bottom: 28px;
+  padding: 0 20px;
 }
 
 .reason__picture {
@@ -161,17 +162,17 @@
   }
 
   .reason__number {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   .reason__text {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 44px;
+    padding-right: 44px;
   }
 
   .reason__info--one > .reason__title {
     margin-top: 46px;
-    margin-bottom: 9px;
+    margin-bottom: 11px;
   }
 
   .reason__info {
@@ -217,6 +218,7 @@
 
   .reason__info--one > .reason__title {
     margin-top: 53px;
+    margin-bottom: 10px;
   }
 
   .reason__info--two > .reason__title {
@@ -235,6 +237,10 @@
   .reason--grey > .reason__title {
     padding-left: 88px;
     padding-right: 88px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
+  }
+
+  .reason__text {
+    padding: 0 60px;
   }
 }

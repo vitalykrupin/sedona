@@ -9,7 +9,7 @@
     width: 100%;
     height: 100%;
     left: 0;
-    bottom: -41px;
+    bottom: -33px;
     z-index: 1;
     background-image: url("../img/bg-triangle.svg");
     background-repeat: no-repeat;
@@ -22,13 +22,11 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-
   color: $black;
-
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   padding-top: 41px;
   text-align: center;
 }
@@ -38,9 +36,7 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
-
   color: $light-text;
-
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
@@ -59,7 +55,12 @@
 @media (min-width: $tablet-width) {
   .content-header {
     width: 768px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
+    // margin-bottom: 50px;
+
+    &:before {
+      display: none;
+    }
   }
 
   .content-header__title {
@@ -67,7 +68,7 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 50px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
   .content-header__title br {
@@ -96,9 +97,10 @@
     width: 800px;
     padding-left: 95px;
     padding-right: 95px;
+    margin-bottom: 31px;
+    padding-top: 51px;
   }
 
   .content-header__description {
-    width: 433px;
   }
 }

@@ -10,17 +10,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 56px;
-  background-color: $primary-color;
-
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.7);
-  }
 }
 
 .site-list__item:not(:last-child) {
@@ -32,6 +21,7 @@
 }
 
 .site-list__link {
+  padding: 7px 0;
   display: block;
   font-weight: 700;
   font-size: 18px;
@@ -42,8 +32,14 @@
   margin: 0;
   width: 100%;
   text-align: center;
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: #669ec0;
+  }
 
   &:active {
+    background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
   }
 }
@@ -53,6 +49,24 @@
     flex-direction: row;
   }
 
+  .site-list__link {
+    font-size: 14px;
+    line-height: 26px;
+    color: $black;
+    padding: 14px 0;
+    background-color: transparent;
+
+    &:hover {
+      color: #81b3d2;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: #b2b2b2;
+      background-color: transparent;
+    }
+  }
+
   .site-list__item {
     background-color: transparent;
     width: 20%;
@@ -60,19 +74,17 @@
     &:hover {
       background-color: transparent;
     }
-  }
 
-  .site-list__link {
-    font-size: 14px;
-    line-height: 26px;
-    color: $black;
+    &--active .site-list__link {
+      color: #766357;
 
-    &:hover {
-      color: #81b3d2;
-    }
+      &:hover {
+        color: #604e43;
+      }
 
-    &:active {
-      color: #b2b2b2;
+      &:active {
+        color: rgba(118, 99, 87, 0.3);
+      }
     }
   }
 

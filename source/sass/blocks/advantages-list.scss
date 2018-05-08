@@ -4,7 +4,6 @@
   padding-left: 69px;
   padding-top: 35px;
   padding-right: 20px;
-  margin-bottom: 10px;
 
   display: flex;
   flex-direction: column;
@@ -12,7 +11,7 @@
 }
 
 .advantages-list__item {
-  padding-bottom: 14px;
+  padding-bottom: 18px;
 
   &--gift::before {
     position: absolute;
@@ -62,6 +61,7 @@
   text-transform: uppercase;
   margin: 0;
   color: $black;
+  margin-bottom: 15px;
 }
 
 .advantages-list__text {
@@ -86,13 +86,13 @@
   .advantages-list__title {
     font-size: 21px;
     vertical-align: middle;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     margin-top: 100px;
   }
 
   .advantages-list__text {
     margin: 0;
-    text-align: start;
+    text-align: center;
   }
 
   .advantages-list__item {
