@@ -38,8 +38,8 @@
   text-transform: uppercase;
   color: $light-text;
   margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 23px;
+  margin-right: 23px;
   text-align: center;
 }
 
@@ -49,6 +49,10 @@
 }
 
 .form .content-header::before {
+  display: none;
+}
+
+.media .content-header::before {
   display: none;
 }
 
@@ -73,6 +77,10 @@
 
   .content-header__title br {
     display: none;
+  }
+
+  .media .content-header__description {
+    padding: 0 140px;
   }
 
   .form .content-header__description {
@@ -101,6 +109,7 @@
     padding-top: 51px;
   }
 
-  .content-header__description {
+  .media .content-header__description {
+    padding: 0 355px;
   }
 }

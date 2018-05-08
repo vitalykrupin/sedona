@@ -1,5 +1,17 @@
 .photo {
   height: 415px;
+  position: relative;
+}
+
+.photo::after {
+  content: "";
+  position: absolute;
+  bottom: 23px;
+  left: -20px;
+  width: 320px;
+  height: 1px;
+  background-color: #333333;
+  z-index: 2;
 }
 
 .photo__image {
@@ -41,6 +53,10 @@
     width: 100%;
     padding: 0;
     height: 347px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .photo__image {
@@ -84,7 +100,7 @@
 
   .photo__info {
     position: absolute;
-    bottom: 0;
+    bottom: 80px;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;

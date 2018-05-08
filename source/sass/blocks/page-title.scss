@@ -14,7 +14,7 @@
   }
 
   &--short {
-    height: 155px;
+    min-height: 159px;
   }
 
   // &::before {
@@ -38,7 +38,7 @@
 }
 
 .page-title--short .page-title__image {
-  margin-top: 50px;
+  margin-top: 52px;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,7 +80,7 @@
     width: 1200px;
 
     &--short {
-      min-height: 301px;
+      min-height: 303px;
     }
   }
 

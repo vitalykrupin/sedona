@@ -1,5 +1,20 @@
 .media .content-header {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
+}
+
+.media .content-header {
+  min-height: initial;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    height: 1px;
+    width: 320px;
+    background-color: #333333;
+  }
 }
 
 .media .content-header__title {
@@ -10,10 +25,14 @@
 @media (min-width: $tablet-width) {
   .media .content-header__title {
     font-size: 30px;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
 
   .media .content-header {
-    margin-bottom: 67px;
+    margin-bottom: 69px;
+
+    &::after {
+      display: none;
+    }
   }
 }
