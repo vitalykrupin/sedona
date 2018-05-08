@@ -1,21 +1,7 @@
 .body {
   font-family: $main-font;
-
-  width: 320px;
-  margin: 0 auto;
+  background-color: #f2f2f2;
   padding: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .body {
-    width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .body {
-    width: 1200px;
-  }
 }
 
 // * {
