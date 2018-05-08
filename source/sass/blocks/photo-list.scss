@@ -3,7 +3,6 @@
 
   display: flex;
   flex-direction: column;
-
   padding: 22px 20px;
   padding-bottom: 0;
 }
@@ -17,15 +16,7 @@
     padding-left: 60px;
     padding-right: 60px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .photo-list {
-    padding: 0;
-  }
-}
-
-@media (min-width: $tablet-width) {
   .photo-list__item {
     width: 50%;
   }
@@ -36,6 +27,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photo-list {
+    padding: 0;
+  }
+
   .photo-list__item {
     width: 33.3%;
   }

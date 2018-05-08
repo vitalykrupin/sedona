@@ -13,23 +13,6 @@
 
 .advantages-list__item {
   padding-bottom: 14px;
-}
-
-.advantages-list__item {
-
-  &--home:before {
-    position: absolute;
-    content: "";
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/icon-house.svg");
-    background-position: 0 0;
-    background-size: 38px;
-    background-repeat: no-repeat;
-    fill: $primary-color;
-    top: 26px;
-    left: 21px;
-  }
 
   &--gift:before {
     position: absolute;
@@ -56,6 +39,20 @@
     top: 272px;
     left: 19px;
   }
+}
+
+.advantages-list__item--home:before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icon-house.svg");
+  background-position: 0 0;
+  background-size: 38px;
+  background-repeat: no-repeat;
+  fill: $primary-color;
+  top: 26px;
+  left: 21px;
 }
 
 .advantages-list__title {
