@@ -1,3 +1,4 @@
+@import "globals/normalize.scss";
 @import "globals/fonts.scss";
 @import "globals/variables.scss";
 @import "globals/mixins.scss";
@@ -5,11 +6,10 @@
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
-@import "blocks/menu-button.scss";
 @import "blocks/logo.scss";
 @import "blocks/page-title.scss";
 @import "blocks/page-main.scss";
-// @import "blocks/reasons.scss";
+@import "blocks/reasons.scss";
 @import "blocks/content-header.scss";
 @import "blocks/main-list.scss";
 @import "blocks/reason.scss";
@@ -23,11 +23,10 @@
 @import "blocks/social.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/copyright.scss";
-// @import "blocks/logo-academy.scss";
 @import "blocks/photo-list.scss";
 @import "blocks/photo.scss";
-// @import "blocks/media.scss";
-// @import "blocks/likes-counter";
+@import "blocks/media.scss";
+@import "blocks/likes-counter";
 @import "blocks/video.scss";
 @import "blocks/feedback-form.scss";
 @import "blocks/guest-name.scss";
@@ -44,3 +43,6 @@
 @import "blocks/sub-list.scss";
 @import "blocks/container.scss";
 @import "blocks/top-row.scss";
+@import "blocks/html.scss";
+@import "blocks/player.scss";
+@import "blocks/bottom-line.scss"

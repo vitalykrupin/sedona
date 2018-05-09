@@ -1,9 +1,10 @@
 .copyright {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
-  width: 320px;
+  align-items: center;
+  width: 140px;
 }
 
 .copyright__made-by {
@@ -11,6 +12,17 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
-
+  text-align: center;
   color: $black;
+  margin: 0;
+}
+
+.copyright__link {
+  &:hover {
+    fill: $primary-color;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
 }

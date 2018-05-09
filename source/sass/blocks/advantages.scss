@@ -1,3 +1,9 @@
 .advantages {
-  height: 416px;
+  margin-bottom: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    margin-bottom: 1px;
+  }
 }

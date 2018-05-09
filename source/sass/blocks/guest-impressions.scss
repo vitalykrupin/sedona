@@ -1,13 +1,7 @@
 .guest-impressions {
-  min-height: 290px;
-  border: none;
-}
-
-@media (min-width: $tablet-width) {
-  .guest-impressions {
-    order: 1;
-    width: 50%;
-  }
+  min-height: 271px;
+  margin-bottom: 18px;
+  width: 100%;
 }
 
 .guest-impressions__title {
@@ -15,6 +9,43 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-
   color: $black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .guest-impressions {
+    order: 1;
+    width: 50%;
+    margin-bottom: 49px;
+    position: relative;
+  }
+
+  .guest-impressions::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 2px;
+    height: 292px;
+    background-color: #f2f2f2;
+  }
+
+  .guest-impressions__title {
+    text-align: start;
+    font-size: 21px;
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .guest-impressions {
+    margin-bottom: 48px;
+  }
+
+  .guest-impressions__title {
+    margin-left: 80px;
+    margin-bottom: 57px;
+  }
 }

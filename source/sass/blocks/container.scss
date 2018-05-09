@@ -1,3 +1,10 @@
+.container {
+  margin: 0 auto;
+  width: 320px;
+  background-color: $white;
+  box-shadow: 0 0 25px -10px;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     width: 768px;

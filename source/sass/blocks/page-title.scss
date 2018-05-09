@@ -1,35 +1,109 @@
 .page-title {
+  position: relative;
   margin: 0;
-
   width: 320px;
-  height: 389px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: bottom, center;
+  text-align: center;
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  background-position: center;
+  &--index {
+    min-height: 390px;
+  }
 
   &--short {
-    height: 159px;
+    min-height: 159px;
   }
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   left: 0;
+  //   bottom: 0;
+  //   z-index: 1;
+  //   background-image: url("../img/bg-intro-triangle-mobile.svg");
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: bottom;
+  // }
+}
+
+.page-title__image {
+  vertical-align: middle;
+  margin-top: 91px;
+}
+
+.page-title--short .page-title__image {
+  margin-top: 52px;
 }
 
 @media (min-width: $tablet-width) {
   .page-title {
     width: 768px;
-    min-height: 518px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: bottom, center;
+    text-align: center;
+
+    &--index {
+      min-height: 520px;
+    }
+
+    &--short {
+      min-height: 290px;
+    }
   }
 
-  &--short {
-    height: 290px;
+  .page-title::before {
+    width: 702px;
+    left: 34px;
+  }
+
+  .page-title__image {
+    width: 459px;
+    margin-top: 79px;
+  }
+
+  .page-title--short .page-title__image {
+    margin-top: 93px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page.title {
+  .page-title {
     width: 1200px;
+
+    &--short {
+      min-height: 303px;
+    }
   }
 
-  &--short {
-    height: 301px;
+  .page-title::before {
+    width: 700px;
+    left: 250px;
+  }
+
+  // .page-title::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   left: 0;
+  //   bottom: -26px;
+  //   z-index: 1;
+  //   background-image: url("../img/bg-intro-triangle-mobile.svg");
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: bottom;
+  // }
+
+  .page-title--short .page-title__image {
+    margin-top: 102px;
   }
 }

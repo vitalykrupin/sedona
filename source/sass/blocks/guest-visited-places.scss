@@ -1,13 +1,7 @@
 .guest-visited-places {
-  height: 409px;
-  border: none;
-}
-
-@media (min-width: $tablet-width) {
-  .guest-visited-places {
-    order: 4;
-    width: 100%;
-  }
+  min-height: 392px;
+  margin-bottom: 18px;
+  width: 100%;
 }
 
 .guest-visited-places__title {
@@ -15,6 +9,63 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-
   color: $black;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .guest-visited-places {
+    order: 4;
+    width: 100%;
+    min-height: initial;
+    margin-bottom: 44px;
+  }
+
+  .guest-visited-places__title {
+    font-size: 21px;
+    width: 286px;
+    position: relative;
+    margin-bottom: 31px;
+
+    &::before {
+      position: absolute;
+      top: 25px;
+      left: -182px;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: #f2f2f2;
+    }
+
+    &::after {
+      position: absolute;
+      top: 25px;
+      right: -182px;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: #f2f2f2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .guest-visited-places {
+      margin-bottom: 78px;
+    }
+
+    .guest-visited-places__title {
+      margin-bottom: 37px;
+
+      &::before {
+        width: 280px;
+        left: -337px;
+      }
+
+      &::after {
+        width: 280px;
+        right: -337px;
+      }
+    }
+  }
 }

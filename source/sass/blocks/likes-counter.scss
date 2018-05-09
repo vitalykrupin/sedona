@@ -1,0 +1,28 @@
+.likes-counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 66px;
+  height: 40px;
+  fill: rgba(0, 0, 0, 0.3);
+  // padding-left: 35px;
+  // padding-top: 11px;
+}
+
+.likes-counter p {
+  color: $black;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .likes-counter {
+    fill: $white;
+  }
+
+  .likes-counter p {
+    color: $white;
+    font-size: 14px;
+  }
+}

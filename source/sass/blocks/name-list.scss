@@ -1,12 +1,35 @@
 .name-list {
   @include list-reset();
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }
 
 .name-list__item {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.name-list__item > .feedback-form__label {
+  margin-right: 17px;
+}
+
+.name-list__item > .feedback-form__input {
+  flex-grow: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .name-list {
+    align-items: flex-start;
+    padding-left: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .name-list {
+    padding-left: 80px;
+  }
 }

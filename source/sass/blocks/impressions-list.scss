@@ -4,3 +4,18 @@
   display: flex;
   flex-direction: column;
 }
+
+.impressions-list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-bottom: 11px;
+  height: 58px;
+}
+
+@media (min-width: $tablet-width) {
+  .impressions-list__item {
+    margin-bottom: 20px;
+  }
+}

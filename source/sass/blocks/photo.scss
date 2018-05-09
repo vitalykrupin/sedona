@@ -1,52 +1,27 @@
 .photo {
   height: 415px;
+  position: relative;
+}
+
+.photo::after {
+  content: "";
+  position: absolute;
+  bottom: 23px;
+  left: -20px;
+  width: 320px;
+  height: 1px;
+  background-color: #333333;
+  z-index: 2;
+}
+
+.photo__image {
+  vertical-align: top;
 }
 
 .photo__info {
   display: flex;
   flex-direction: column;
-}
-
-@media (min-width: $tablet-width) {
-  .photo {
-    width: 50%;
-    padding: 0;
-    height: 347px;
-  }
-
-  .photo:first-child {
-    width: 100%;
-    height: 480px;
-  }
-
-  .photo__info {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: $input-color;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .photo {
-    width: 33%;
-    height: 268px;
-    padding: 0;
-  }
-
-  .photo:first-child {
-    width: 100%;
-    height: 400px;
-  }
-
-  .photo__info {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: $input-color;
-  }
+  padding-top: 14px;
 }
 
 .photo__title {
@@ -54,9 +29,7 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
-
   color: $black;
-
   margin: 0;
 }
 
@@ -64,9 +37,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-
   color: $light-text;
-
   margin: 0;
 }
 
@@ -74,6 +45,72 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .photo {
+    width: 100%;
+    padding: 0;
+    height: 347px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .photo__image {
+    height: 267px;
+    width: 100%;
+  }
+
+  .photo-list__item:first-child .photo {
+    height: 480px;
+  }
+
+  .photo-list__item:first-child .photo__image {
+    height: 400px;
+    width: 100%;
+  }
+
+  .photo__info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-top: 0;
+    padding-left: 21px;
+    padding-right: 20px;
+    background-color: $input-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-list__item {
+    position: relative;
+    width: 33.3%;
+    padding: 0;
+    height: 267px;
+  }
+
+  .photo-list__item:first-child {
+    width: 100%;
+    height: 400px;
+  }
+
+  .photo__info {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo__author,
+  .photo__title,
+  .photo__likes {
+    color: $white;
+  }
 }

@@ -1,5 +1,8 @@
 .sub-list {
   @include list-reset();
+
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {

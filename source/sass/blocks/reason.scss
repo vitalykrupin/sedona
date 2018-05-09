@@ -10,35 +10,26 @@
   }
 
   &--grey {
-    min-height: 167px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $grey;
     color: $black;
+
+    padding-top: 28px;
+    padding-left: 33px;
+    padding-right: 33px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .reason--blue {
-    flex-direction: row;
-    justify-content: space-between;
-    height: 260px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .reason--grey {
-    width: 256px;
-    height: 256px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .reason--grey {
-    width: 400px;
-  }
-}
-
-.reason__info {
-  height: 193px;
+.reason--grey:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 280px;
+  background-color: $light-text;
+  top: 166px;
 }
 
 .reason__title {
@@ -46,8 +37,30 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-
   margin: 0;
+}
+
+.reason__title br {
+  display: none;
+}
+
+.reason--grey > .reason__title {
+  margin-bottom: 8px;
+}
+
+.reason--grey > .reason__text {
+  text-align: center;
+  padding: 0;
+}
+
+.reason__info--one > .reason__title {
+  margin-bottom: 9px;
+  margin-top: 55px;
+}
+
+.reason__info--two > .reason__title {
+  margin-bottom: 10px;
+  margin-top: 39px;
 }
 
 .reason__number {
@@ -57,10 +70,13 @@
   text-transform: uppercase;
 
   color: $light-text;
+
+  margin: 0;
+  margin-bottom: 16px;
 }
 
-.reason--blue > .reason__number,
-.reason--blue > .reason__text {
+.reason--blue .reason__number,
+.reason--blue .reason__text {
   color: $white;
 }
 
@@ -69,11 +85,176 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-
   color: $light-text;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0 20px;
 }
 
-.reason__picture > img {
-  vertical-align: top;
-  margin: 0;
+.reason__picture {
+  width: 320px;
+  height: 260px;
+
+  &--one {
+    background-image: url("../img/main-city-mobile@1x.jpg");
+    background-size: cover;
+  }
+
+  &--two {
+    background-image: url("../img/main-bridge-mobile@1x.jpg");
+    background-size: cover;
+  }
+}
+
+.reason__info {
+  text-align: center;
+
+  &--one {
+    min-height: 206px;
+  }
+
+  &--two {
+    min-height: 190px;
+  }
+
+  .reason__picture {
+    width: 800px;
+    height: 256px;
+    background-position-x: 10;
+
+    &--two {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reason--blue {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 255px;
+  }
+
+  .reason--grey {
+    flex-direction: column;
+    padding-top: 44px;
+    width: 256px;
+    min-height: 256px;
+  }
+
+  .reason--grey > .reason__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .reason--grey > .reason__text {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .reason--grey:nth-child(2) > .reason__text {
+    padding: 0 22px;
+  }
+
+  .reason--grey:not(:last-child)::after {
+    display: none;
+  }
+
+  .reason__title {
+    font-size: 21px;
+    padding-left: 53px;
+    padding-right: 52px;
+  }
+
+  .reason__number {
+    margin-bottom: 21px;
+  }
+
+  .reason__text {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  .reason__info--one > .reason__title {
+    margin-top: 44px;
+    margin-bottom: 9px;
+  }
+
+  .reason__info {
+    width: 256px;
+  }
+
+  .reason__info--two > .reason__title {
+    margin-top: 43px;
+    margin-bottom: 10px;
+  }
+
+  .reason__info--two > .reason__text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .reason__info--two {
+    order: 2;
+  }
+
+  .reason__picture {
+    width: 512px;
+    height: 255px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason--grey {
+    width: 400px;
+  }
+
+  .reason__info {
+    width: 400px;
+  }
+
+  .reason__number {
+    margin-bottom: 20px;
+  }
+
+  .reason__picture {
+    width: 800px;
+  }
+
+  .reason--blue .reason__title {
+    padding-left: 93px;
+    padding-right: 93px;
+  }
+
+  .reason__info--one > .reason__title {
+    margin-top: 51px;
+    margin-bottom: 10px;
+  }
+
+  .reason__info--two > .reason__title {
+    margin-top: 51px;
+  }
+
+  .reason__info--two > .reason__text {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .reason__title br {
+    display: initial;
+  }
+
+  .reason--grey > .reason__title {
+    padding-left: 88px;
+    padding-right: 88px;
+    margin-bottom: 9px;
+  }
+
+  .reason--grey:nth-child(2) > .reason__text {
+    padding: 0 30px;
+  }
+
+  .reason__text {
+    padding: 0 60px;
+  }
 }
