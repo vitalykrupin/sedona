@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
-<!— Pixel Glass —>
+<!-- <!— Pixel Glass —>
     <style>
       HTML {
         background-repeat: no-repeat;
@@ -34,7 +34,7 @@
     </style>
     <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
     <script src="../node_modules/pixel-glass/script.js"></script>
-<!— // Pixel Glass —>
+<!— // Pixel Glass —> -->
 
   </head>
   <body class="body">
@@ -65,7 +65,11 @@
 
         <div class="top-row">
           <a class="page-header__logo logo">
-            <img src="img/logo-sedona-mobile.svg" alt="Седона" class="logo__sedona" width="102" height="83">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="logo__sedona" src="img/logo-sedona-mobile.svg" width="105" height="85" alt="логотип Седоны">
+            </picture>
           </a>
         </div>
 
