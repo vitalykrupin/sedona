@@ -103,18 +103,19 @@
   content: "";
   top: 0;
   left: 0;
-  width: 57px;
-  height: 57px;
+  width: 55px;
+  height: 55px;
   background-color: #f2f2f2;
   border-radius: 10%;
 }
 
 .feedback-form__input--checkbox:checked + label::before {
   position: absolute;
+  content: "";
   top: 0;
   left: 0;
-  width: 57px;
-  height: 57px;
+  width: 55px;
+  height: 55px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -138,7 +139,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 22px;
     width: 100%;
 
     color: $black;
@@ -214,12 +215,13 @@
 
   .feedback-form__header {
     border: none;
-    margin-bottom: 11px;
+    margin-bottom: 15px;
   }
 
   .feedback-form__header .content-header__title {
     font-size: 30px;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
+    padding-top: 40px;
   }
 
   .feedback-form__input {
@@ -228,17 +230,20 @@
     }
   }
 
-  .feedback-form__input--checkbox + label::before {
-    position: absolute;
-    content: "";
-    top: 3px;
-    left: 30px;
+  .feedback-form__input--checkbox + label {
+    width: 200px;
+    padding: 15px 0 0 77px;
+    margin-left: 0;
   }
 
   .feedback-form__input--checkbox:checked + label::before {
-    position: absolute;
-    top: 3px;
-    left: 30px;
+    top: 9px;
+    left: 1px;
+  }
+
+  .feedback-form__input--checkbox + label::before {
+    top: 9px;
+    left: 1px;
   }
 
   .feedback-form__control {
@@ -265,6 +270,7 @@
   }
 
   .feedback-form__header .content-header__title {
+    padding-top: 37px;
     margin-bottom: 30px;
   }
 
@@ -281,8 +287,30 @@
     display: none;
   }
 
+  .feedback-form__label--checkbox {
+    margin-left: 0;
+    width: 200px;
+  }
+
   .feedback-form__input--radio + label::before {
     left: 4px;
+  }
+
+  .feedback-form__input--checkbox {
+    padding: 15px 0 0 77px;
+    margin-bottom: 22px;
+  }
+
+  .feedback-form__input--checkbox:checked + label::before {
+    position: absolute;
+    top: 5px;
+    left: 2px;
+  }
+
+  .feedback-form__input--checkbox + label::before {
+    position: absolute;
+    top: 5px;
+    left: 2px;
   }
 
   .feedback-form__input--radio:checked + label::before {

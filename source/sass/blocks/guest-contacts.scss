@@ -6,7 +6,7 @@
 
 .guest-contacts__title {
   text-align: center;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -26,7 +26,7 @@
     line-height: 26px;
     text-transform: uppercase;
     color: $black;
-    margin-bottom: 29px;
+    margin-bottom: 25px;
     position: relative;
 
     &::before {
@@ -54,10 +54,11 @@
 @media (min-width: $desktop-width) {
   .guest-contacts {
     min-height: initial;
+    margin-bottom: 29px;
   }
 
   .guest-contacts__title {
-    margin-bottom: 75px;
+    margin-bottom: 74px;
 
     &::before {
       width: 280px;

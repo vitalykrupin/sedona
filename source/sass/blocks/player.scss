@@ -183,4 +183,44 @@
   .player__button-block {
     width: 800px;
   }
+
+  .player__scale {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 45px;
+      left: 92px;
+      width: 539px;
+      height: 3px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 42px;
+      left: 204px;
+      width: 9px;
+      height: 9px;
+      background-color: $white;
+      border-radius: 50%;
+    }
+  }
+
+  .player__fullscreen-btn {
+    top: 35px;
+    right: 36px;
+  }
+
+  .player__subtitles-btn {
+    top: 35px;
+    right: 87px;
+  }
+
+  .player__replay-btn {
+    top: 34px;
+    left: 27px;
+  }
 }

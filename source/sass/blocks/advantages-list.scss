@@ -11,7 +11,7 @@
 }
 
 .advantages-list__item {
-  padding-bottom: 18px;
+  padding-bottom: 13px;
 
   &--gift::before {
     position: absolute;
@@ -86,8 +86,8 @@
   .advantages-list__title {
     font-size: 21px;
     vertical-align: middle;
-    margin-bottom: 22px;
-    margin-top: 100px;
+    margin-bottom: 23px;
+    margin-top: 96px;
   }
 
   .advantages-list__text {
@@ -167,8 +167,7 @@
 
   .advantages-list__text {
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0;
   }
 
   .advantages-list__text br {
@@ -176,6 +175,6 @@
   }
 
   .advantages-list__title {
-    margin-top: 77px;
+    margin-top: 73px;
   }
 }

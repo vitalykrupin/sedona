@@ -18,7 +18,7 @@
   .guest-impressions {
     order: 1;
     width: 50%;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
     position: relative;
   }
 
@@ -35,11 +35,15 @@
   .guest-impressions__title {
     text-align: start;
     font-size: 21px;
-    margin-bottom: 59px;
+    margin-bottom: 57px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .guest-impressions {
+    margin-bottom: 48px;
+  }
+
   .guest-impressions__title {
     margin-left: 80px;
     margin-bottom: 57px;

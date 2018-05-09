@@ -18,19 +18,24 @@
   .guest-name {
     width: 50%;
     order: 2;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
   }
 
   .guest-name__title {
     text-align: initial;
     margin-left: 59px;
-    margin-bottom: 59px;
+    margin-bottom: 56px;
     font-size: 21px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .guest-name {
+    margin-bottom: 48px;
+  }
+
   .guest-name__title {
     margin-left: 81px;
+    margin-bottom: 57px;
   }
 }

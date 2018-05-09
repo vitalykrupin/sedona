@@ -22,14 +22,26 @@
 @media (min-width: $tablet-width) {
   .media .content-header__title {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
+    padding-top: 40px;
   }
 
   .media .content-header {
-    margin-bottom: 69px;
+    margin-bottom: 66px;
 
     &::after {
       display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .media .content-header {
+      margin-bottom: 68px;
+    }
+
+    .media .content-header__title {
+      padding-top: 38px;
+      margin-bottom: 29px;
     }
   }
 }

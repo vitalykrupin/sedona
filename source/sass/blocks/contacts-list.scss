@@ -9,7 +9,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   &--phone {
     &::before {
@@ -44,13 +44,13 @@
 
 .contacts-list .feedback-form__label {
   padding-left: 22px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts-list__item {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 }
 
