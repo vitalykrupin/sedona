@@ -209,26 +209,27 @@
   .reason__picture {
     width: 512px;
     height: 255px;
+  }
 
-    &--one {
-      background-image: url("../img/main-city-tablet@1x.jpg");
-      background-size: cover;
+  .reason__picture--one {
+    background-image: url("../img/main-city-tablet@1x.jpg");
+    background-size: cover;
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/main-city-tablet@2x.jpg");
-      }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-city-tablet@2x.jpg");
     }
+  }
 
-    &--two {
-      background-image: url("../img/main-bridge-tablet@1x.jpg");
-      background-size: cover;
+  .reason__picture--two {
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
+    background-size: cover;
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/main-bridge-tablet@2x.jpg");
-      }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bridge-tablet@2x.jpg");
     }
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .reason--grey {
@@ -245,23 +246,23 @@
 
   .reason__picture {
     width: 800px;
+  }
 
-    &--one {
-      background-image: url("../img/main-city-desktop@1x.jpg");
-      background-size: cover;
+  .reason__picture--one {
+    background-image: url("../img/main-city-desktop@1x.jpg");
+    background-size: cover;
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/main-city-desktop@2x.jpg");
-      }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-city-desktop@2x.jpg");
     }
+  }
 
-    &--two {
-      background-image: url("../img/main-bridge-desktop@1x.jpg");
-      background-size: cover;
+  .reason__picture--two {
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
+    background-size: cover;
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/main-bridge-desktop@2x.jpg");
-      }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
     }
   }
 
