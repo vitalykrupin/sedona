@@ -137,7 +137,7 @@
 
   .reason--grey {
     flex-direction: column;
-    padding-top: 47px;
+    padding-top: 44px;
     width: 256px;
     min-height: 256px;
   }
@@ -150,6 +150,10 @@
   .reason--grey > .reason__text {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .reason--grey:nth-child(2) > .reason__text {
+    padding: 0 22px;
   }
 
   .reason--grey:not(:last-child)::after {
@@ -181,7 +185,8 @@
   }
 
   .reason__info--two > .reason__title {
-    margin-top: 47px;
+    margin-top: 45px;
+    margin-bottom: 6px;
   }
 
   .reason__info--two > .reason__text {
@@ -242,7 +247,11 @@
   .reason--grey > .reason__title {
     padding-left: 88px;
     padding-right: 88px;
-    margin-bottom: 9px;
+    margin-bottom: 13px;
+  }
+
+  .reason--grey:nth-child(2) > .reason__text {
+    padding: 0 30px;
   }
 
   .reason__text {
