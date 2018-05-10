@@ -1,10 +1,22 @@
 .copyright {
   position: relative;
+  width: 140px;
+}
+
+.copyright__link {
+  text-decoration: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  width: 140px;
+  justify-content: space-between;
+
+  &:hover > .copyright__link--icon {
+    fill: $primary-color;
+  }
+
+  &:active > .copyright__link--icon {
+    fill: #b2b2b2;
+  }
 }
 
 .copyright__made-by {
@@ -15,16 +27,6 @@
   text-align: center;
   color: $black;
   margin: 0;
-}
-
-.copyright__link {
-  &:hover {
-    fill: $primary-color;
-  }
-
-  &:active {
-    fill: #b2b2b2;
-  }
 }
 
 @media (min-width: $tablet-width) {

@@ -22,12 +22,9 @@
 
 .social__link {
   display: inline-block;
+  vertical-align: center;
   width: 100%;
-  height: 100%;
   background-color: $primary-color;
-  fill: $white;
-  text-align: center;
-  vertical-align: middle;
 
   &:hover {
     background-color: #669ec0;
@@ -36,6 +33,10 @@
   &:active {
     background-color: #5496bd;
     fill: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active .social-link__svg {
+    opacity: 0.3;
   }
 }
 
