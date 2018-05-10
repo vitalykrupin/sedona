@@ -139,48 +139,13 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    padding: 0 0 0 22px;
+    padding: 0 0 0 19px;
     width: 100%;
-
     color: $black;
     background-color: $input-color;
-
-
     height: 58px;
-    border: none;
+    border: 3px solid transparent;
     outline: none;
-
-    &::-webkit-input-placeholder {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 26px;
-
-      color: $black;
-    }
-
-    &:-moz-placeholder {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 26px;
-
-      color: $black;
-    }
-
-    &::-moz-placeholder {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 26px;
-
-      color: $black;
-    }
-
-    &:-ms-input-placeholder {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 26px;
-
-      color: $black;
-    }
 
     &:hover {
       background-color: #e5e5e5;
@@ -189,6 +154,34 @@
     &:focus {
       background-color: $white;
       border: 3px solid #e5e5e5;
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      color: $black;
+    }
+
+    &:-moz-placeholder {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      color: $black;
+    }
+
+    &::-moz-placeholder {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      color: $black;
+    }
+
+    &:-ms-input-placeholder {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      color: $black;
     }
   }
 }
@@ -226,7 +219,7 @@
 
   .feedback-form__input {
     &--text {
-      padding-left: 21px;
+      padding-left: 18px;
     }
   }
 

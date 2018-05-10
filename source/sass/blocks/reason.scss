@@ -98,11 +98,19 @@
   &--one {
     background-image: url("../img/main-city-mobile@1x.jpg");
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-city-mobile@2x.jpg");
+    }
   }
 
   &--two {
     background-image: url("../img/main-bridge-mobile@1x.jpg");
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bridge-mobile@2x.jpg");
+    }
   }
 }
 
@@ -202,7 +210,26 @@
     width: 512px;
     height: 255px;
   }
+
+  .reason__picture--one {
+    background-image: url("../img/main-city-tablet@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-city-tablet@2x.jpg");
+    }
+  }
+
+  .reason__picture--two {
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bridge-tablet@2x.jpg");
+    }
+  }
 }
+
 
 @media (min-width: $desktop-width) {
   .reason--grey {
@@ -219,6 +246,24 @@
 
   .reason__picture {
     width: 800px;
+  }
+
+  .reason__picture--one {
+    background-image: url("../img/main-city-desktop@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-city-desktop@2x.jpg");
+    }
+  }
+
+  .reason__picture--two {
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
+    }
   }
 
   .reason--blue .reason__title {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
-    <!— Pixel Glass —>
+    <!-- <!— Pixel Glass —>
     <style>
       HTML {
         background-repeat: no-repeat;
@@ -34,7 +34,7 @@
     </style>
     <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
     <script src="../node_modules/pixel-glass/script.js"></script>
-<!— // Pixel Glass —>
+<!— // Pixel Glass —> -->
 
   </head>
   <body class="body">
@@ -65,7 +65,11 @@
 
         <div class="top-row">
           <a class="page-header__logo logo" href="index.html">
-            <img src="img/logo-sedona-mobile.svg" alt="Седона" class="logo__sedona" width="102" height="83">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="logo__sedona" src="img/logo-sedona-mobile.svg" width="101" height="84" alt="логотип Седоны">
+            </picture>
           </a>
         </div>
 
@@ -113,7 +117,7 @@
 
               <li class="contacts-list__item contacts-list__item--email">
                 <label for="email" class="feedback-form__label feedback-form__label--text">Электронная почта<sup>*</sup>:</label>
-                <input type="email" class="feedback-form__input feedback-form__input--text" name="email" id="email" placeholder="Введите e-mail">
+                <input type="email" class="feedback-form__input feedback-form__input--text" name="email" id="email" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
@@ -178,13 +182,13 @@
           </fieldset>
         </form>
 
-        <div class="failure-popup visually-hidden">
+        <div class="failure-popup">
           <h2 class="failure-popup__title">Что-то пошло не так!</h2>
           <p class="failure-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button type="button" class="failure-popup__button button">Ок</button>
         </div>
 
-        <div class="success-popup visually-hidden">
+        <div class="success-popup">
           <h2 class="success-popup__title">Ваш отзыв отправлен!</h2>
           <p class="success-popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
           <button type="button" class="success-popup__button button">Закрыть окно</button>
@@ -242,6 +246,7 @@
       </footer>
     </div>
 
+    <script src="js/picturefill.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

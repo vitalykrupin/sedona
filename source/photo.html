@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
-    <!— Pixel Glass —>
+    <!-- <!— Pixel Glass —>
     <style>
       HTML {
         background-repeat: no-repeat;
@@ -34,7 +34,7 @@
     </style>
     <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
     <script src="../node_modules/pixel-glass/script.js"></script>
-<!— // Pixel Glass —>
+<!— // Pixel Glass —> -->
 
   </head>
   <body class="body">
@@ -65,7 +65,11 @@
 
         <div class="top-row">
           <a class="page-header__logo logo" href="index.html">
-            <img src="img/logo-sedona-mobile.svg" alt="Седона" class="logo__sedona" width="102" height="83">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="logo__sedona" src="img/logo-sedona-mobile.svg" width="101" height="84" alt="логотип Седоны">
+            </picture>
           </a>
         </div>
 
@@ -83,7 +87,12 @@
         <ul class="media__list photo-list">
           <li class="photo-list__item">
             <article class="photo">
-              <img src="img/photo-sunset-mobile@1x.jpg" alt="Фото окресностей" class="photo__image" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фото окресностей">
+              </picture>
+              <!-- <img src="img/photo-sunset-mobile@1x.jpg" alt="Фото окресностей" class="photo__image" width="280" height="280"> -->
 
               <div class="photo__info">
                 <div class="photo__text">
@@ -110,7 +119,12 @@
 
           <li class="photo-list__item">
             <article class="photo">
-              <img src="img/photo-cactus-mobile@1x.jpg" alt="Фото окресностей" class="photo__image" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фото окресностей">
+              </picture>
+              <!-- <img src="img/photo-cactus-mobile@1x.jpg" alt="Фото окресностей" class="photo__image" width="280" height="280"> -->
 
               <div class="photo__info">
                 <div class="photo__text">
@@ -137,7 +151,12 @@
 
           <li class="photo-list__item">
             <article class="photo">
-              <img src="img/photo-roads-mobile@1x.jpg" alt="Фото окресностей" class="photo__image" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фото окресностей">
+              </picture>
+              <!-- <img src="img/photo-roads-mobile@1x.jpg" alt="Фото окресностей" class="photo__image" width="280" height="280"> -->
 
               <div class="photo__info">
                 <div class="photo__text">
@@ -164,7 +183,12 @@
 
           <li class="photo-list__item">
             <article class="photo">
-              <img src="img/photo-bridge-mobile@1x.jpg" alt="Фото окресностей" class="photo__image" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото окресностей">
+              </picture>
+              <!-- <img src="img/photo-bridge-mobile@1x.jpg" alt="Фото окресностей" class="photo__image" width="280" height="280"> -->
 
               <div class="photo__info">
                 <div class="photo__text">
@@ -193,7 +217,12 @@
         <div class="media__section video">
           <h3 class="video__title">Все еще сомневаетесь?</h3>
           <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <img src="img/video-mobile@1x.jpg" class="video__content" width="320" height="201"></img>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__content" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Фото окресностей">
+          </picture>
+          <!-- <img src="img/video-mobile@1x.jpg" class="video__content" width="320" height="201"></img> -->
 
           <div class="video__player player">
             <div class="player__scale-block">
@@ -279,6 +308,7 @@
       </footer>
     </div>
 
+    <script src="js/picturefill.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
