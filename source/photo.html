@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
-    <!— Pixel Glass —>
+    <!-- <!— Pixel Glass —>
     <style>
       HTML {
         background-repeat: no-repeat;
@@ -34,11 +34,15 @@
     </style>
     <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
     <script src="../node_modules/pixel-glass/script.js"></script>
-<!— // Pixel Glass —>
+<!— // Pixel Glass —> -->
 
   </head>
   <body class="body">
-    <svg style="display: none">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <!-- <svg style="display: none">
       <symbol id="twitter" fill="#ffffff">
         <g>
           <g>
@@ -78,7 +82,7 @@
           </g>
         </g>
       </symbol>
-    </svg>
+    </svg> -->
     <div class="container">
       <header class="page-header page-header--sub">
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -327,7 +331,7 @@
       </footer>
     </div>
 
-    <script src="js/picturefill.min.js"></script>
+    <script src="js/picturefill.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
