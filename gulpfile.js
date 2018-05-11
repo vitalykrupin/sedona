@@ -19,8 +19,11 @@ var del = require("del");
 gulp.task("build", function (done) {
   run(
     "clean",
+    "images",
+    "webp",
     "copy",
     "style",
+    "minify-js",
     "sprite",
     "html",
     done
@@ -40,6 +43,15 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"))
 });
 
+gulp.task("minify-js", function(){
+  gulp.src("source/js/*.js")
+    .pipe(minifyjs())
+    .pipe(rename(function(path) {
+      path.basename += ".min";
+    }))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{img,jpg,svg}")
     .pipe(imagemin([
@@ -47,17 +59,17 @@ gulp.task("images", function () {
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("build/img/icons/*.svg")
+  return gulp.src("source/img/icons/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -76,6 +88,10 @@ gulp.task("html", function () {
 gulp.task("serve", function() {
   server.init({
     server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
@@ -85,8 +101,8 @@ gulp.task("serve", function() {
  gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/*.js"
+    // "source/img/**",
+    // "source/js/*.js"
   ], {
     base: "source"
   })
