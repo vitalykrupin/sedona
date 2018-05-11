@@ -34,60 +34,45 @@
 }
 
 .player__button-block {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   height: 66px;
   background-color: $input-color;
 }
 
-.player__replay-btn {
-  position: absolute;
-  top: 20px;
-  left: 17px;
-  border: none;
-  background-color: transparent;
+.player__btn {
   fill: #5c6870;
 
-  &:hover {
+  &:hover svg {
     fill: #333333;
   }
 
-  &:active {
+  &:active svg {
     fill: #b8b8b8;
   }
+}
+
+.btn__wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 115px;
+  margin-right: 9px;
+}
+
+.player__replay-btn {
+  margin-left: 16px;
+  border: none;
+  background-color: transparent;
 }
 
 .player__subtitles-btn {
-  position: absolute;
-  top: 21px;
-  right: 66px;
   border: none;
   background-color: transparent;
-  fill: #5c6870;
-
-  &:hover {
-    fill: #333333;
-  }
-
-  &:active {
-    fill: #b8b8b8;
-  }
 }
 
 .player__fullscreen-btn {
-  position: absolute;
-  top: 21px;
-  right: 15px;
   border: none;
   background-color: transparent;
-  fill: #5c6870;
-
-  &:hover {
-    fill: #333333;
-  }
-
-  &:active {
-    fill: #b8b8b8;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -118,6 +103,18 @@
     }
   }
 
+  .player__btn {
+    fill: $white;
+
+    &:hover svg {
+      fill: #c2c2c2;
+    }
+
+    &:active svg {
+      fill: #949494;
+    }
+  }
+
   .player__button-block {
     width: 648px;
     height: 93px;
@@ -127,46 +124,12 @@
     background-color: transparent;
   }
 
+  .btn__wrapper {
+    margin-right: 27px;
+  }
+
   .player__replay-btn {
-    top: 32px;
-    left: 28px;
-    fill: $white;
-
-    &:hover {
-      fill: #c2c2c2;
-    }
-
-    &:active {
-      fill: #949494;
-    }
-  }
-
-  .player__subtitles-btn {
-    top: 33px;
-    right: 85px;
-    fill: $white;
-
-    &:hover {
-      fill: #c2c2c2;
-    }
-
-    &:active {
-      fill: #949494;
-    }
-  }
-
-  .player__fullscreen-btn {
-    top: 33px;
-    right: 34px;
-    fill: $white;
-
-    &:hover {
-      fill: #c2c2c2;
-    }
-
-    &:active {
-      fill: #949494;
-    }
+    margin-left: 26px;
   }
 }
 
@@ -207,18 +170,11 @@
     }
   }
 
-  .player__fullscreen-btn {
-    top: 35px;
-    right: 36px;
-  }
-
-  .player__subtitles-btn {
-    top: 35px;
-    right: 87px;
+  .btn__wrapper {
+    margin-right: 29px;
   }
 
   .player__replay-btn {
-    top: 34px;
-    left: 27px;
+    margin-left: 25px;
   }
 }

@@ -3,9 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 66px;
+  // width: 66px;
   height: 40px;
-  fill: rgba(0, 0, 0, 0.3);
   // padding-left: 35px;
   // padding-top: 11px;
 }
@@ -16,8 +15,13 @@
   margin: 0;
 }
 
+.likes-counter svg {
+  opacity: 0.3;
+}
+
 @media (min-width: $desktop-width) {
-  .likes-counter {
+  .likes-counter svg {
+    opacity: 1;
     fill: $white;
   }
 

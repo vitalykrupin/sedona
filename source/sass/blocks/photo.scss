@@ -21,7 +21,7 @@
 .photo__info {
   display: flex;
   flex-direction: column;
-  padding-top: 14px;
+  padding-top: 13px;
 }
 
 .photo__title {
@@ -61,15 +61,6 @@
 
   .photo__image {
     height: 267px;
-    width: 100%;
-  }
-
-  .photo-list__item:first-child .photo {
-    height: 480px;
-  }
-
-  .photo-list__item:first-child .photo__image {
-    height: 400px;
     width: 100%;
   }
 
