@@ -25,6 +25,8 @@
 }
 
 .feedback-form__label {
+  cursor: pointer;
+  
   &--text {
     font-weight: 400;
     font-size: 14px;
