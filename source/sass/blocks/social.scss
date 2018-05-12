@@ -1,5 +1,5 @@
 .social {
-  width: 320px;
+  max-width: 320px;
 }
 
 .social__list {
@@ -42,7 +42,6 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    width: auto;
     margin: 0;
   }
 }

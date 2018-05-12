@@ -1,7 +1,7 @@
 .page-title {
   position: relative;
   margin: 0;
-  width: 320px;
+  max-width: 320px;
   background-image: url("../img/bg-intro-triangle-mobile.svg"),
     url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -37,7 +37,7 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
-    width: 768px;
+    max-width: 768px;
     background-image: url("../img/bg-intro-triangle-tablet.svg"),
       url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
@@ -79,7 +79,7 @@
 
 @media (min-width: $desktop-width) {
   .page-title {
-    width: 1200px;
+    max-width: 1200px;
     background-image: url("../img/bg-intro-triangle-desktop.svg"),
       url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;

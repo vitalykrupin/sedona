@@ -6,11 +6,17 @@
 
 .guest-contacts__title {
   text-align: center;
+  width: 100%;
+  // margin: 0 auto;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+.guest-contacts .feedback-form__input {
+  padding-right: 76px;
 }
 
 @media (min-width: $tablet-width) {

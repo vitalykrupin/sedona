@@ -10,6 +10,7 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $black;
+  width: 100%;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -24,7 +25,8 @@
 
   .guest-visited-places__title {
     font-size: 21px;
-    width: 286px;
+    // width: 286px;
+    width: 100%;
     position: relative;
     margin-bottom: 31px;
 

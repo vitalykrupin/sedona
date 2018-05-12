@@ -1,6 +1,6 @@
 .copyright {
   position: relative;
-  width: 140px;
+  max-width: 140px;
   padding-left: 6px;
 }
 
@@ -33,6 +33,7 @@
 @media (min-width: $tablet-width) {
   .copyright {
     padding-left: 0;
+    width: 138px;
   }
 
   .copyright__made-by {
