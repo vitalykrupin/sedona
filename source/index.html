@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
 <!-- <!— Pixel Glass —>
     <style>
@@ -160,7 +162,12 @@
           <button type="button" class="search__button button">Найти гостиницу</button>
         </section>
 
-        <section class="page-main__map map"></section>
+        <section class="page-main__map map">
+          <h2 class="visually-hidden">Карта города Седона</h2>
+          <div class="map__image">
+            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358802.51498855685!2d-112.07103123377996!3d34.82199263393443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sru!4v1526111353848" width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </section>
       </main>
 
       <footer class="page-footer">
