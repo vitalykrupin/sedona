@@ -29,6 +29,8 @@
 .page-title__image {
   vertical-align: middle;
   margin-top: 91px;
+  height: 211px;
+  width: 280px;
 }
 
 .page-title--short .page-title__image {
@@ -62,13 +64,9 @@
     }
   }
 
-  .page-title::before {
-    width: 702px;
-    left: 34px;
-  }
-
   .page-title__image {
-    width: 459px;
+    width: 461px;
+    height: 348px;
     margin-top: 79px;
   }
 
@@ -98,11 +96,6 @@
     &--short {
       min-height: 303px;
     }
-  }
-
-  .page-title::before {
-    width: 700px;
-    left: 250px;
   }
 
   .page-title--short .page-title__image {

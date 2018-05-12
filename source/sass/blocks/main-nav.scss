@@ -30,7 +30,7 @@
 }
 
 .main-nav--nojs .main-nav__wrapper {
-  display: initial;
+  display: inherit;
   top: 0;
   right: 0;
   z-index: 1;
@@ -118,7 +118,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav--closed .main-nav__wrapper {
-    display: initial;
+    display: inherit;
   }
 
   .main-nav__wrapper {
