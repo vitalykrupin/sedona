@@ -1,7 +1,7 @@
 .content-header {
   position: relative;
-  margin-bottom: 18px;
-  min-height: 206px;
+  // margin-bottom: 18px;
+  // min-height: 206px;
 
   &::before {
     content: "";
@@ -9,7 +9,7 @@
     width: 100%;
     height: 100%;
     left: 0;
-    bottom: -33px;
+    bottom: -43px;
     z-index: 1;
     background-image: url("../img/bg-triangle.svg");
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@
 @media (min-width: $tablet-width) {
   .content-header {
     width: 768px;
-    margin-bottom: 0;
+    // margin-bottom: 0;
     // margin-bottom: 50px;
 
     &::before {
@@ -81,6 +81,7 @@
 
   .media .content-header__description {
     padding: 0 140px;
+    max-width: 100%;
   }
 
   .form .content-header__description {
@@ -110,6 +111,6 @@
   }
 
   .media .content-header__description {
-    padding: 0 355px;
+    padding: 0 360px;
   }
 }
