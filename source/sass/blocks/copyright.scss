@@ -11,11 +11,11 @@
   align-items: center;
   justify-content: space-between;
 
-  &:hover > .copyright__link--icon {
+  &:hover > .copyright__icon {
     fill: $primary-color;
   }
 
-  &:active > .copyright__link--icon {
+  &:active > .copyright__icon {
     fill: #b2b2b2;
   }
 }
