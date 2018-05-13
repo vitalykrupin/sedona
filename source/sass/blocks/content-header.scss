@@ -85,8 +85,10 @@
   }
 
   .form .content-header__description {
-    width: 440px;
+    max-width: 100%;
     margin: 0 auto;
+    max-width: 100%;
+    padding: 0 102px;
   }
 
   .form .content-header__title {

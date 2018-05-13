@@ -1,6 +1,6 @@
 .guest-visited-places {
-  min-height: 392px;
-  margin-bottom: 18px;
+  // min-height: 392px;
+  margin-bottom: 21px;
   width: 100%;
 }
 
@@ -19,7 +19,7 @@
   .guest-visited-places {
     order: 4;
     width: 100%;
-    min-height: initial;
+    // min-height: initial;
     margin-bottom: 44px;
   }
 
@@ -61,12 +61,12 @@
 
       &::before {
         width: 280px;
-        left: -337px;
+        left: 0;
       }
 
       &::after {
         width: 280px;
-        right: -337px;
+        right: 0;
       }
     }
   }

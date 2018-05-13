@@ -1,7 +1,8 @@
 .guest-contacts {
-  min-height: 268px;
+  // min-height: 268px;
   margin-bottom: 18px;
   width: 100%;
+  // padding-bottom: 17px;
 }
 
 .guest-contacts__title {
@@ -23,7 +24,7 @@
   .guest-contacts {
     order: 3;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 13px;
   }
 
   .guest-contacts__title {
@@ -59,8 +60,8 @@
 
 @media (min-width: $desktop-width) {
   .guest-contacts {
-    min-height: initial;
-    margin-bottom: 29px;
+    // min-height: initial;
+    margin-bottom: 12px;
   }
 
   .guest-contacts__title {
@@ -68,12 +69,12 @@
 
     &::before {
       width: 280px;
-      left: -341px;
+      left: 0;
     }
 
     &::after {
       width: 280px;
-      right: -341px;
+      right: 0;
     }
   }
 }
