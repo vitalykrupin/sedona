@@ -1,3 +1,9 @@
-// .reasons {
-//   margin: 0;
-// }
+.reasons__header {
+  margin-bottom: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .reasons__header {
+    margin-bottom: 51px;
+  }
+}

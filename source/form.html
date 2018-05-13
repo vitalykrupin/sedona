@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <!— Pixel Glass —>
+    <!— Pixel Glass —>
     <style>
       HTML {
         background-repeat: no-repeat;
@@ -34,17 +36,17 @@
     </style>
     <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
     <script src="../node_modules/pixel-glass/script.js"></script>
-<!— // Pixel Glass —> -->
+<!— // Pixel Glass —>
 
   </head>
   <body class="body">
-    <div style="display: none">
+    <div class="visually-hidden">
       <include src="build/img/sprite.svg"></include>
     </div>
 
     <div class="container">
       <header class="page-header page-header--sub">
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button type="button" class="main-nav__toggle"></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
@@ -72,14 +74,14 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="logo__sedona" src="img/logo-sedona-mobile.svg" width="101" height="84" alt="логотип Седоны">
+              <img class="logo__sedona" src="img/logo-sedona-mobile.svg" width="101" height="84" "логотип Седоны">
             </picture>
           </a>
         </div>
 
         <h1 class="page-title page-title--short">
           <span class="visually-hidden">Главное фото Седоны</span>
-          <img src="img/text-sedona.svg" class="page-title__image" alt="Промо изображение" height="40" width="232">
+          <div class="page-title__img--min">
         </h1>
       </header>
 
@@ -117,12 +119,12 @@
             <ul class="guest-contacts__list contacts-list">
               <li class="contacts-list__item contacts-list__item--phone">
                 <label for="phone" class="feedback-form__label feedback-form__label--text"><span>Контактный </span>телефон<sup>*</sup>:</label>
-                <input type="tel" class="feedback-form__input feedback-form__input--text" name="tel" id="phone" placeholder="Введите телефон">
+                <input required type="tel" class="feedback-form__input feedback-form__input--text" name="tel" id="phone" placeholder="Введите телефон">
               </li>
 
               <li class="contacts-list__item contacts-list__item--email">
                 <label for="email" class="feedback-form__label feedback-form__label--text">Электронная почта<sup>*</sup>:</label>
-                <input type="email" class="feedback-form__input feedback-form__input--text" name="email" id="email" placeholder="Введите e-mail" required>
+                <input required type="email" class="feedback-form__input feedback-form__input--text" name="email" id="email" placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
@@ -149,7 +151,7 @@
           </fieldset>
 
           <fieldset class="feedback-form__visited-places guest-visited-places">
-            <legend class="guest-visited-places__title">Посещенные достопримечательности:</legend>
+            <legend class="guest-visited-places__title">Посещенные <br>достопримечательности:</legend>
 
             <ul class="guest-visited-places__list visited-places-list">
               <li class="visited-places-list__item visited-places-list__item--active">

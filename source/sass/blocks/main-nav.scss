@@ -4,8 +4,7 @@
 
 .main-nav__wrapper {
   position: relative;
-
-  width: 320px;
+  max-width: 320px;
 }
 
 .main-nav__wrapper::after {
@@ -30,18 +29,22 @@
   display: none;
 }
 
+.main-nav--nojs .main-nav__wrapper {
+  display: inherit;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 14px;
   right: 18px;
   z-index: 2;
-
   display: block;
   width: 25px;
   height: 25px;
-
   background-color: transparent;
-
   cursor: pointer;
   border: none;
 
@@ -53,14 +56,11 @@
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
-
   position: absolute;
   top: 4px;
   right: 3px;
-
   width: 20px;
   height: 3px;
-
   background-color: $primary-color;
   box-shadow: 0 8px 0 0 $primary-color, 0 16px 0 0 $primary-color;
 }
@@ -73,14 +73,37 @@
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: 10px;
     right: -5px;
-
     width: 31px;
     height: 3px;
+    background-color: $white;
+  }
 
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  top: 17px;
+  right: 20px;
+  z-index: 11;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    width: 31px;
+    height: 3px;
     background-color: $white;
   }
 
@@ -96,11 +119,11 @@
 
 @media (min-width: $tablet-width) {
   .main-nav--closed .main-nav__wrapper {
-    display: initial;
+    display: inherit;
   }
 
   .main-nav__wrapper {
-    width: 768px;
+    max-width: 768px;
   }
 
   .main-nav__wrapper::after {
@@ -114,6 +137,6 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
-    width: 1200px;
+    max-width: 1200px;
   }
 }

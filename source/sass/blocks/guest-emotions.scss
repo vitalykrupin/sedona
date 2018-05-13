@@ -19,6 +19,7 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $black;
+  width: 100%;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -106,7 +107,7 @@
   .guest-emotions__text {
     width: 100%;
     padding: 13px 18px;
-    margin-bottom: 57px;
+    margin-bottom: 59px;
   }
 }
 
@@ -114,12 +115,12 @@
   .guest-emotions__title {
     &::before {
       width: 280px;
-      left: -356px;
+      left: 0;
     }
 
     &::after {
       width: 280px;
-      right: -356px;
+      right: 0;
     }
   }
 }

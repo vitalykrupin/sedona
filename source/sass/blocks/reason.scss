@@ -29,7 +29,8 @@
   height: 1px;
   width: 280px;
   background-color: $light-text;
-  top: 166px;
+  top: 168px;
+  left: 20px;
 }
 
 .reason__title {
@@ -46,11 +47,13 @@
 
 .reason--grey > .reason__title {
   margin-bottom: 8px;
+  max-width: 100%;
 }
 
 .reason--grey > .reason__text {
   text-align: center;
   padding: 0;
+  max-width: 100%;
 }
 
 .reason__info--one > .reason__title {
@@ -153,6 +156,7 @@
   .reason--grey > .reason__title {
     text-align: center;
     margin-bottom: 10px;
+    padding: 0 15px;
   }
 
   .reason--grey > .reason__text {
@@ -170,8 +174,8 @@
 
   .reason__title {
     font-size: 21px;
-    padding-left: 53px;
-    padding-right: 52px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 
   .reason__number {

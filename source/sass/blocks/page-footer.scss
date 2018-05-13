@@ -1,5 +1,5 @@
 .page-footer {
-  min-height: 244px;
+  // min-height: 244px;
 
   display: flex;
   flex-direction: column;
@@ -14,16 +14,16 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding: 0 60px;
+    padding: 35px 60px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 120px;
+    // min-height: 120px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 0 120px;
+    padding: 35px 120px;
   }
 }

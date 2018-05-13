@@ -10,6 +10,7 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $black;
+  width: 100%;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -20,22 +21,14 @@
     width: 50%;
     margin-bottom: 49px;
     position: relative;
-  }
-
-  .guest-impressions::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    right: 0;
-    width: 2px;
-    height: 292px;
-    background-color: #f2f2f2;
+    border-right: 3px solid #f2f2f2;
   }
 
   .guest-impressions__title {
-    text-align: start;
+    width: initial;
     font-size: 21px;
     margin-bottom: 57px;
+    text-align: inherit;
   }
 }
 

@@ -6,7 +6,7 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $black;
-  width: 320px;
+  max-width: 320px;
   margin-bottom: 36px;
 }
 
@@ -16,7 +16,7 @@
 
 @media (min-width: $tablet-width) {
   .hashtag {
-    width: auto;
+    // width: auto;
     margin: 0;
   }
 }
