@@ -27,6 +27,7 @@
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
+  width: 100%;
 }
 
 .search__text br {
@@ -88,7 +89,7 @@
   }
 
   .search__text br {
-    display: initial;
+    display: inherit;
   }
 
   .search__button {

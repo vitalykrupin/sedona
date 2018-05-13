@@ -141,6 +141,9 @@
 
   &:active::before {
     background-color: #d5d5d5;
+    background-image: url("../img/icon-tick-active.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
