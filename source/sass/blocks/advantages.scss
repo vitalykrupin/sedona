@@ -4,6 +4,12 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    margin-bottom: 1px;
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: 82px;
   }
 }

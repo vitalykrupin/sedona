@@ -4,7 +4,6 @@
   padding-left: 69px;
   padding-top: 36px;
   padding-right: 20px;
-
   display: flex;
   flex-direction: column;
   position: relative;
@@ -98,9 +97,8 @@
 
   .advantages-list__item {
     width: 256px;
-    min-height: 330px;
     padding-bottom: 0;
-    // padding-top: 100px;
+    padding-top: 62px;
     padding-left: 45px;
     padding-right: 45px;
     display: flex;
@@ -151,7 +149,7 @@
 @media (min-width: $desktop-width) {
   .advantages-list__item {
     width: 400px;
-    min-height: 331px;
+    padding-top: 85px;
 
     &--home::before {
       left: 161px;
@@ -172,7 +170,7 @@
   }
 
   .advantages-list__text br {
-    display: initial;
+    display: inherit;
   }
 
   .advantages-list__title {
