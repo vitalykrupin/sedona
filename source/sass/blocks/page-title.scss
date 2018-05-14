@@ -2,6 +2,7 @@
   position: relative;
   margin: 0;
   max-width: 320px;
+  background-color: #85aecd;
   background-image: url("../img/bg-intro-triangle-mobile.svg"),
     url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -25,17 +26,6 @@
     min-height: 159px;
   }
 }
-
-// .page-title__image {
-//   vertical-align: middle;
-//   margin-top: 91px;
-//   // height: 211px;
-//   // width: 100%;
-// }
-
-// .page-title--short .page-title__image {
-//   margin-top: 52px;
-// }
 
 .page-title__img--index {
   position: absolute;
@@ -102,16 +92,6 @@
     height: 90px;
     top: 95px;
   }
-
-  // .page-title__image {
-  //   width: 461px;
-  //   // height: 348px;
-  //   margin-top: 79px;
-  // }
-
-  // .page-title--short .page-title__image {
-  //   margin-top: 93px;
-  // }
 }
 
 @media (min-width: $desktop-width) {

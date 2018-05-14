@@ -1,7 +1,5 @@
 .content-header {
   position: relative;
-  // margin-bottom: 18px;
-  // min-height: 206px;
 
   &::before {
     content: "";
@@ -59,8 +57,6 @@
 @media (min-width: $tablet-width) {
   .content-header {
     width: 768px;
-    // margin-bottom: 0;
-    // margin-bottom: 50px;
 
     &::before {
       display: none;
